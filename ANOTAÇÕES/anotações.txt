@@ -1,1 +1,35 @@
 CURSO DE RUBY
+- Verificar o tipo do número usando o método class. Exemplo1- 23.class retona Interger. Exemplo2- 3.5.class retorna float.
+
+- TIPOS PRIMITIVOS: os tipos primitivos são as categorias básicas de dados que a linguagem oferece para representar valores e realizar operações. Embora Ruby seja uma linguagem orientada a objetos, onde tudo é um objeto, os tipos primitivos ainda são fundamentais para a programação. Aqui estão os principais tipos primitivos em Ruby:
+
+Inteiros (Integer): Representam números inteiros, tanto positivos quanto negativos.
+Exemplo: 42, -7
+
+Números de ponto flutuante (Float): Representam números que possuem uma parte decimal.
+Exemplo: 3.14, -0.001
+Strings (String):
+
+Representam sequências de caracteres.
+Exemplo: "Olá, mundo!", 'Ruby'
+Strings podem ser definidas usando aspas duplas (") ou aspas simples ('). Aspas duplas permitem interpolação de variáveis e escape de caracteres, enquanto aspas simples não.
+Booleanos (TrueClass e FalseClass):
+
+Representam valores lógicos: verdadeiro (true) e falso (false).
+Exemplo: true, false
+Em Ruby, qualquer valor que não seja false ou nil é considerado verdadeiro (truthy).
+Nil (NilClass):
+
+Representa a ausência de valor ou um valor nulo.
+Exemplo: nil
+É o único valor da classe NilClass e é usado para representar "nenhum valor" ou "nada".
+Símbolos (Symbol):
+
+Representam identificadores imutáveis e frequentemente utilizados como chaves em hashes ou para representar nomes e identificadores.
+Exemplo: :nome, :idade
+Características Importantes:
+Imutabilidade: Em Ruby, alguns tipos primitivos são imutáveis. Por exemplo, strings podem ser mutáveis ou imutáveis dependendo de como são manipuladas (quando se usa métodos como << ou +=, a string pode ser alterada).
+
+Objetos: Todos esses tipos primitivos são objetos em Ruby. Por exemplo, 42 é um objeto da classe Integer, e "Olá" é um objeto da classe String. Isso permite que você utilize métodos e funcionalidades de objetos para manipular esses tipos primitivos.
+
+Conversão de Tipos: Ruby oferece métodos para converter entre diferentes tipos primitivos, como to_i, to_f, to_s, e to_sym. Por exemplo, "123".to_i converte a string "123" para o inteiro 123. Esses tipos primitivos são a base para a construção de expressões e estruturas de dados mais complexas em Ruby. Combinando-os, você pode criar variáveis, realizar cálculos, manipular texto e controlar o fluxo do seu programa.
