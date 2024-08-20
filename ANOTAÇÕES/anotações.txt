@@ -1,6 +1,36 @@
 CURSO DE RUBY
 - Verificar o tipo do número usando o método class. Exemplo1- 23.class retona Interger. Exemplo2- 3.5.class retorna float.
 
+- COMENTARIO DE 1 LINHA: #
+- COMENTARIO DE VARIAS LINHAS: =begin codigo =end
+- INTERPOLAÇÃO DE VARIÁVEIS: #{variavel}. Pra funcionar deve-se usar aspas duplas.
+
+- GETS
+O método gets é usado para ler uma linha de entrada do usuário. Quando você usa gets, o programa espera que o usuário digite algo e pressione Enter. O texto digitado pelo usuário é então retornado como uma string.
+
+Exemplo:
+print "Digite seu nome: "
+nome = gets
+puts "Olá, #{nome}!"
+
+Se o usuário digitar "Ana" e pressionar Enter, o programa exibirá "Olá, Ana!" com um caractere de nova linha ao final da string "Ana".
+
+- .CHOMP
+O método .chomp é usado para remover o caractere de nova linha (\n) do final de uma string. Quando você usa gets, a string retornada inclui o caractere de nova linha no final, porque o Enter digitado pelo usuário é considerado parte da entrada. O método .chomp remove esse caractere.
+
+Exemplo:
+print "Digite seu nome: "
+nome = gets.chomp
+puts "Olá, #{nome}!"
+
+Neste caso, se o usuário digitar "Ana" e pressionar Enter, a variável nome conterá "Ana" sem o caractere de nova linha no final, e o programa exibirá "Olá, Ana!" de forma mais limpa.
+Resumindo
+gets: Lê uma linha de entrada do usuário e inclui o caractere de nova linha.
+.chomp: Remove o caractere de nova linha do final de uma string.
+Você pode usar .chomp sempre que quiser processar a entrada do usuário sem a quebra de linha final, tornando o tratamento de strings mais simples e direto.
+
+- .inspect= Ajuda a obter uma visão clara e detalhada de como os dados estão estruturados dentro de um objeto. Ex: como o método puts sempre gera umaquebra de linha, o .inspect mostra o \n na saida de uma variavel.
+
 - TIPOS PRIMITIVOS: os tipos primitivos são as categorias básicas de dados que a linguagem oferece para representar valores e realizar operações. Embora Ruby seja uma linguagem orientada a objetos, onde tudo é um objeto, os tipos primitivos ainda são fundamentais para a programação. Aqui estão os principais tipos primitivos em Ruby:
 
 Inteiros (Integer): Representam números inteiros, tanto positivos quanto negativos.
@@ -33,3 +63,4 @@ Imutabilidade: Em Ruby, alguns tipos primitivos são imutáveis. Por exemplo, st
 Objetos: Todos esses tipos primitivos são objetos em Ruby. Por exemplo, 42 é um objeto da classe Integer, e "Olá" é um objeto da classe String. Isso permite que você utilize métodos e funcionalidades de objetos para manipular esses tipos primitivos.
 
 Conversão de Tipos: Ruby oferece métodos para converter entre diferentes tipos primitivos, como to_i, to_f, to_s, e to_sym. Por exemplo, "123".to_i converte a string "123" para o inteiro 123. Esses tipos primitivos são a base para a construção de expressões e estruturas de dados mais complexas em Ruby. Combinando-os, você pode criar variáveis, realizar cálculos, manipular texto e controlar o fluxo do seu programa.
+
