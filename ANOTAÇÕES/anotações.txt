@@ -64,3 +64,98 @@ Objetos: Todos esses tipos primitivos são objetos em Ruby. Por exemplo, 42 é u
 
 Conversão de Tipos: Ruby oferece métodos para converter entre diferentes tipos primitivos, como to_i, to_f, to_s, e to_sym. Por exemplo, "123".to_i converte a string "123" para o inteiro 123. Esses tipos primitivos são a base para a construção de expressões e estruturas de dados mais complexas em Ruby. Combinando-os, você pode criar variáveis, realizar cálculos, manipular texto e controlar o fluxo do seu programa.
 
+- CONVERSÃO: 
+.to_i converte para inteiro.
+.to_f converte para float.
+.to_s converte para string.
+
+OPERADORES ARITMÉTICOS:
+Adição (+)
+
+Descrição: Soma dois números.
+Exemplo: 5 + 3 resulta em 8.
+Subtração (-)
+
+Descrição: Subtrai o segundo número do primeiro.
+Exemplo: 10 - 4 resulta em 6.
+Multiplicação (*)
+
+Descrição: Multiplica dois números.
+Exemplo: 7 * 5 resulta em 35.
+Divisão (/)
+
+Descrição: Divide o primeiro número pelo segundo. Retorna um Float.
+Exemplo: 10 / 4 resulta em 2.5.
+Divisão Inteira (div)
+
+Descrição: Divide o primeiro número pelo segundo e retorna o quociente inteiro.
+Exemplo: 10.div(4) resulta em 2.
+Módulo (%)
+
+Descrição: Retorna o restante da divisão entre dois números.
+Exemplo: 10 % 4 resulta em 2.
+Potenciação (**)
+
+Descrição: Eleva o primeiro número à potência do segundo.
+Exemplo: 2 ** 3 resulta em 8.
+Operadores Aritméticos Combinados
+Adição Atribuição (+=)
+
+Descrição: Adiciona e atribui o resultado à variável.
+Exemplo: a += 3 é equivalente a a = a + 3.
+Subtração Atribuição (-=)
+
+Descrição: Subtrai e atribui o resultado à variável.
+Exemplo: a -= 4 é equivalente a a = a - 4.
+Multiplicação Atribuição (*=)
+
+Descrição: Multiplica e atribui o resultado à variável.
+Exemplo: a *= 5 é equivalente a a = a * 5.
+Divisão Atribuição (/=)
+
+Descrição: Divide e atribui o resultado à variável.
+Exemplo: a /= 4 é equivalente a a = a / 4.
+Módulo Atribuição (%=)
+
+Descrição: Aplica o operador módulo e atribui o resultado à variável.
+Exemplo: a %= 4 é equivalente a a = a % 4.
+Potenciação Atribuição (**=)
+
+Descrição: Eleva à potência e atribui o resultado à variável.
+Exemplo: a **= 3 é equivalente a a = a ** 3.
+Esses operadores são usados para realizar operações matemáticas básicas em Ruby e são bastante diretos para quem está familiarizado com operações aritméticas.
+
+OPERADORES RELACIONAIS:
+> maior
+< menor
+>= maior ou igual
+<= menor ou igual
+== igual
+!= diferente
+
+Operador spaceship <=>: m Ruby é conhecido como o operador "spaceship" ou operador de comparação, e é usado para realizar uma comparação entre dois valores. Este operador é bastante útil para determinar a ordem relativa entre dois elementos e é fundamental em muitas operações de ordenação e comparação.
+
+Funcionamento do Operador <=>
+O operador <=> retorna um valor inteiro que indica a relação entre os dois operandos:
+
+Se o primeiro operando é menor que o segundo: Retorna -1.
+Se o primeiro operando é igual ao segundo: Retorna 0.
+Se o primeiro operando é maior que o segundo: Retorna 1.
+
+EXEMPLO:
+irb(main):019> 1 <=> 2
+=> -1
+irb(main):020> 2 <=> 2
+=> 0
+irb(main):021> 2 <=> 1
+=> 1
+
+OPERADORES DE ATRIBUIÇÃO:
+
+Atribuição Simples (=): Atribui um valor à variável.
+Atribuição Adicional (+=): Adiciona um valor à variável.
+Atribuição Subtrativa (-=): Subtrai um valor da variável.
+Atribuição Multiplicativa (*=): Multiplica a variável por um valor.
+Atribuição Divisiva (/=): Divide a variável por um valor.
+Atribuição de Módulo (%=): Calcula o módulo e atribui o resultado.
+Atribuição de Potenciação (**=): Eleva a variável à potência de um valor.
