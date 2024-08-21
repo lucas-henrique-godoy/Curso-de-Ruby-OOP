@@ -266,3 +266,31 @@ Essas estruturas fornecem flexibilidade para o controle de fluxo em Ruby, permit
 && and Funciona com 2 valores/condições
 || or Funciona com 2 valores/condições
 ! not Funicona apenas com 1 valor/condição
+
+- ESTRUTURAS DE REPETIÇÃO:
+
+WHILE: O loop while executa um bloco de código enquanto uma condição for verdadeira.
+Sintaxe:
+while condição
+  # código a ser executado
+end
+Exemplo: Neste exemplo, o loop continua enquanto i for menor que 5, e imprime os valores de i de 0 a 4.
+i = 0
+while i < 5
+  puts i
+  i += 1
+end
+
+
+UNTIL: O loop until é o oposto do while e executa um bloco de código enquanto a condição for falsa.
+Sintaxe:
+until condição
+  # código a ser executado
+end
+Exemplo: Neste exemplo, o loop continua enquanto i for menor que 5.
+i = 0
+until i >= 5
+  puts i
+  i += 1
+end
+
