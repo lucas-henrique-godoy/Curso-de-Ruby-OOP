@@ -261,3 +261,8 @@ Similar ao if modificado, mas para o caso de condição falsa.
 # Código se a condição for falsa
 puts "Você é menor de idade." unless idade >= 18
 Essas estruturas fornecem flexibilidade para o controle de fluxo em Ruby, permitindo que o código reaja a diferentes condições de maneira eficiente.
+
+- OPERADORES LÓGICOS:
+&& and Funciona com 2 valores/condições
+|| or Funciona com 2 valores/condições
+! not Funicona apenas com 1 valor/condição
