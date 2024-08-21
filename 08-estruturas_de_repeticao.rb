@@ -12,7 +12,7 @@ end # Fim do loop `while`, o loop para quando i > 50
 # i == 50 # Após o loop `while`, i será 51, não mais 50
 
 # UNTIL:
-until i <= 1 # O loop `until` continua executando enquanto a condição for falsa
+until i <= 0 # O loop `until` continua executando enquanto a condição for falsa
   puts "Sou falso - #{i}" # Imprime a string com o valor atual de i
   i -= 1 # Decrementa o valor de i em 1 a cada iteração
 end # Fim do loop `until`, o loop para quando i <= 1
