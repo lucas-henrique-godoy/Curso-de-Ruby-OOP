@@ -159,3 +159,105 @@ Atribuição Multiplicativa (*=): Multiplica a variável por um valor.
 Atribuição Divisiva (/=): Divide a variável por um valor.
 Atribuição de Módulo (%=): Calcula o módulo e atribui o resultado.
 Atribuição de Potenciação (**=): Eleva a variável à potência de um valor.
+
+- ESTRUTURAS CONDICIONAIS: Em Ruby, estruturas condicionais são usadas para executar diferentes blocos de código dependendo de uma condição. Elas permitem que o programa tome decisões e siga diferentes caminhos de execução. Vamos explorar as principais estruturas condicionais do Ruby:
+
+1. if
+A estrutura básica de decisão. Executa um bloco de código se a condição for verdadeira.
+
+if condição
+  # código a ser executado se a condição for verdadeira
+end
+Exemplo:
+idade = 18
+if idade >= 18
+  puts "Você é maior de idade."
+end
+
+2. else
+Usado em conjunto com if. O bloco else é executado se a condição do if for falsa.
+if condição
+  # código se a condição for verdadeira
+else
+  # código se a condição for falsa
+end
+Exemplo:
+idade = 16
+if idade >= 18
+  puts "Você é maior de idade."
+else
+  puts "Você é menor de idade."
+end
+
+3. elsif
+Permite testar várias condições diferentes em sequência. Usado após um if e antes de um else.
+if condição1
+  # código se condição1 for verdadeira
+elsif condição2
+  # código se condição2 for verdadeira
+else
+  # código se nenhuma das condições anteriores for verdadeira
+end
+Exemplo:
+nota = 85
+if nota >= 90
+  puts "Conceito A"
+elsif nota >= 80
+  puts "Conceito B"
+elsif nota >= 70
+  puts "Conceito C"
+else
+  puts "Conceito D"
+end
+
+4. case
+Uma alternativa ao uso de múltiplos if...elsif. Avalia uma expressão e compara com várias possibilidades.
+case expressão
+when valor1
+  # código se a expressão for igual a valor1
+when valor2
+  # código se a expressão for igual a valor2
+else
+  # código se nenhum dos valores anteriores corresponder
+end
+Exemplo:
+dia_da_semana = "segunda-feira"
+case dia_da_semana
+when "segunda-feira"
+  puts "Início da semana de trabalho."
+when "sábado", "domingo"
+  puts "Final de semana."
+else
+  puts "Dia útil."
+end
+
+5. unless
+Executa um bloco de código se a condição for falsa. É o oposto de if.
+unless condição
+  # código a ser executado se a condição for falsa
+end
+Exemplo:
+idade = 16
+unless idade >= 18
+  puts "Você é menor de idade."
+end
+
+6. ternário
+Uma forma compacta de uma expressão if...else. É útil para atribuições rápidas.
+condição ? valor_se_verdadeiro : valor_se_falso
+Exemplo:
+idade = 18
+status = idade >= 18 ? "Maior de idade" : "Menor de idade"
+puts status
+
+7. if Modificado (Inline)
+Permite executar uma expressão condicional de forma compacta.
+
+# Código se a condição for verdadeira
+puts "Você é maior de idade." if idade >= 18
+8. unless Modificado (Inline)
+Similar ao if modificado, mas para o caso de condição falsa.
+
+# Código se a condição for falsa
+puts "Você é menor de idade." unless idade >= 18
+Essas estruturas fornecem flexibilidade para o controle de fluxo em Ruby, permitindo que o código reaja a diferentes condições de maneira eficiente.
