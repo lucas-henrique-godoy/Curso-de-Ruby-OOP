@@ -20,4 +20,4 @@ end # Fim do loop `until`, o loop para quando i <= 1
 # Quando o valor de i é 1, a condição i <= 1 é verdadeira e o loop termina.
 # Portanto, o loop `until` irá imprimir valores de i começando de 51 até 2, mas não imprimirá 1.
 
-puts "Fim!" # Imprime "Fim!" após a conclusão de todos os loops
+puts "Fim!" # Imprime "Fim!" após a conclusão de todos os loops.
