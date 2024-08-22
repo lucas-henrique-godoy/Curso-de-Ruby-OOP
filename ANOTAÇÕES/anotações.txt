@@ -523,3 +523,54 @@ irb(main):009> :abc.class.object_id
 => 37220 mesmo endereço de memória, mesmo executando mais de 1 vez.
 irb(main):010> :abc.class.object_id
 => 37220 mesmo endereço de memória, mesmo executando mais de 1 vez. 
+
+
+-ITERADOR EACH (mais usado no ruby do que o for): é uma maneira simples e poderosa de percorrer elementos de coleções, como arrays e hashes, e realizar uma operação para cada elemento.
+
+Como Funciona
+Para Arrays: O método each passa cada elemento do array para um bloco de código.
+
+array = [1, 2, 3]
+array.each do |element|
+  puts element
+end
+Saída:
+1
+2
+3
+
+Explicação: O bloco (do |element| ... end) é executado para cada elemento do array, e element representa o item atual do array.
+
+Para Hashes: O método each passa cada par chave-valor do hash para um bloco de código.
+
+hash = { a: 1, b: 2, c: 3 }
+hash.each do |key, value|
+  puts "#{key}: #{value}"
+end
+Saída:
+
+makefile
+Copiar código
+a: 1
+b: 2
+c: 3
+Explicação: O bloco (do |key, value| ... end) é executado para cada par chave-valor do hash, onde key é a chave e value é o valor correspondente.
+
+Resumo
+each é usado para iterar sobre todos os elementos de uma coleção.
+Array: Passa cada elemento para o bloco.
+Hash: Passa cada par chave-valor para o bloco.
+Uso: Ideal para aplicar uma operação a cada item sem modificar a coleção original.
+
+MEU EXEMPLO: Esse código pega a que é o elemento do array, passe em cada um deles, e quando for passar em cada um deles chame de element e depois imprima-o na tela.
+
+PRIMEIRA FORMA INLINE:
+a = [1,4,6,89,0]
+a.each { |element| puts element } 
+
+SEGUNDA FORMA:
+a.each do |el|
+   puts el
+   puts el * 2
+   puts el * 3
+ end
