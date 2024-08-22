@@ -482,3 +482,44 @@ SEGUNDA FORMA:
  - criando um hash: h = { a: "123", b: "456" }
  - Acessando o valor de uma chave: h[:a].
 
+SÍMBOLOS: Definição 1: (São strings estáticas) 
+Definição 2: Símbolos são objetos imutáveis e únicos que representam identificadores, nomes ou valores constantes. Usamos para criar hashes.
+
+Sintaxe: Criados prefixando um nome com dois pontos (:), como :name, :age, :city.
+
+Características:
+
+Imutabilidade: Não podem ser alterados após a criação.
+Identidade Única: Cada símbolo com o mesmo nome é o mesmo objeto na memória.
+Eficiência: Comparações e armazenamento são mais eficientes do que para strings.
+Usos Comuns:
+Chaves de Hashes: Usados como chaves em hashes por sua eficiência.
+
+person = { name: "Alice", age: 30, city: "New York" }
+Parâmetros de Métodos: Representam opções ou parâmetros de métodos.
+
+def greet(options = {})
+  name = options[:name] || "Guest"
+  puts "Hello, #{name}!"
+end
+Identificadores: Representam eventos ou mensagens.
+
+event = :login_success
+Comparação com Strings:
+
+Imutabilidade: Strings podem ser alteradas, símbolos não.
+Eficiência: Comparações e armazenamento são mais rápidos e econômicos para símbolos.
+Exemplo de Comparação
+
+# Comparando símbolos
+symbol1 = :hello
+symbol2 = :hello
+puts symbol1.equal?(symbol2)  # Saída: true (mesmo objeto na memória)
+Símbolos são ideais para representar valores constantes e identificadores devido à sua imutabilidade e eficiência.
+
+.object_id - Retorna o endereço de memória de uma variável. EX: "Lucas".object_id -> Isso na primeira vez que foi executado retorna 13660, na segunda retornou 15500, ou seja o endereço sempre muda. Obs: se usarmos esse método com um símbolo, o endereço de memórianão muda.
+Ex:
+irb(main):009> :abc.class.object_id
+=> 37220 mesmo endereço de memória, mesmo executando mais de 1 vez.
+irb(main):010> :abc.class.object_id
+=> 37220 mesmo endereço de memória, mesmo executando mais de 1 vez. 
