@@ -316,8 +316,6 @@ puts numbers[0]  # Saída: 10
 puts numbers[2]  # Saída: 30
 Você também pode usar índices negativos para acessar os elementos a partir do final do array:
 
-ruby
-Copiar código
 puts numbers[-1]  # Saída: 50 (último elemento)
 puts numbers[-2]  # Saída: 40 (penúltimo elemento)
 Modificando Arrays
@@ -375,4 +373,112 @@ odd_numbers = numbers.reject { |n| n.even? }
 puts odd_numbers           # Saída: [1, 3, 5]
 Conclusão
 Arrays em Ruby são uma estrutura de dados fundamental que permite armazenar e manipular coleções de elementos de maneira eficiente. Você pode acessar, modificar e iterar sobre os elementos de arrays usando uma variedade de métodos e técnicas, o que facilita o trabalho com listas de dados em seus programas Ruby.
+
+nome_do_array.push(valor) - Adiciona um valor na próxima posição do array.
+nome_do_array.delete(valor) - Remove o valor especificado.
+nome_do_vetor[posição]- Para ver o valor de uma determinada posição.
+
+- HASHES: são uma estrutura de dados que armazena pares de chave-valor, onde cada chave é única e associada a um valor. Hashes são úteis para armazenar e acessar dados de forma eficiente. Eles são semelhantes a dicionários em outras linguagens de programação.
+
+Criando Hashes
+Você pode criar um hash de várias maneiras:
+
+# Criando um hash vazio
+empty_hash = {}
+
+# Criando um hash com pares de chave-valor
+person = {
+  "name" => "Alice",
+  "age" => 30,
+  "city" => "New York"
+}
+
+# Usando símbolos como chaves (uma prática comum)
+person = {
+  name: "Alice",
+  age: 30,
+  city: "New York"
+}
+Acessando e Modificando Valores
+Para acessar ou modificar valores em um hash, você usa a chave correspondente:
+
+person = { name: "Alice", age: 30, city: "New York" }
+
+# Acessando um valor
+puts person[:name]  # Saída: Alice
+
+# Modificando um valor
+person[:age] = 31
+puts person[:age]   # Saída: 31
+
+# Adicionando um novo par chave-valor
+person[:occupation] = "Engineer"
+puts person[:occupation]  # Saída: Engineer
+Métodos Comuns de Hashes
+Aqui estão alguns métodos úteis para trabalhar com hashes em Ruby:
+
+keys: Retorna um array com todas as chaves do hash.
+
+puts person.keys.inspect  # Saída: [:name, :age, :city, :occupation]
+values: Retorna um array com todos os valores do hash.
+
+puts person.values.inspect  # Saída: ["Alice", 31, "New York", "Engineer"]
+each: Itera sobre cada par chave-valor no hash.
+
+person.each do |key, value|
+  puts "#{key}: #{value}"
+end
+# Saída:
+# name: Alice
+# age: 31
+# city: New York
+# occupation: Engineer
+has_key?: Verifica se o hash contém uma chave específica.
+
+puts person.has_key?(:age)  # Saída: true
+puts person.has_key?(:salary)  # Saída: false
+has_value?: Verifica se o hash contém um valor específico.
+
+puts person.has_value?("Alice")  # Saída: true
+puts person.has_value?(25)       # Saída: false
+delete: Remove um par chave-valor do hash.
+
+person.delete(:occupation)
+puts person.inspect  # Saída: {:name=>"Alice", :age=>31, :city=>"New York"}
+merge: Mescla dois hashes, com o segundo hash sobrescrevendo valores do primeiro hash para chaves iguais.
+
+new_info = { city: "San Francisco", email: "alice@example.com" }
+person.merge!(new_info)
+puts person.inspect  # Saída: {:name=>"Alice", :age=>31, :city=>"San Francisco", :email=>"alice@example.com"}
+Hashes e Símbolos
+Usar símbolos como chaves é uma prática comum em Ruby, pois os símbolos são mais eficientes em termos de desempenho e memória comparados às strings:
+
+# Usando símbolos como chaves
+person = {
+  name: "Alice",
+  age: 30,
+  city: "New York"
+}
+
+# Acessando valores
+puts person[:name]  # Saída: Alice
+Hashes Aninhados
+Você pode ter hashes dentro de hashes para representar estruturas de dados mais complexas:
+
+people = {
+  alice: { age: 30, city: "New York" },
+  bob: { age: 25, city: "San Francisco" }
+}
+puts people[:alice][:city]  # Saída: New York
+
+Conclusão
+Hashes são uma ferramenta poderosa em Ruby para armazenar e organizar dados de forma eficiente. Eles permitem o acesso rápido a valores baseados em chaves e oferecem uma variedade de métodos para manipular e consultar os dados armazenados.
+
+PRIMEIRA FORMA:
+- criando um hash: h = { "a" => "123", "b" => "456" } 
+- Acessando o valor de uma chave: h["a"].
+
+SEGUNDA FORMA:
+ - criando um hash: h = { a: "123", b: "456" }
+ - Acessando o valor de uma chave: h[:a].
 
