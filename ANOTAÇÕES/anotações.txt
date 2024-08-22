@@ -294,3 +294,85 @@ until i >= 5
   i += 1
 end
 
+-VETORES: vetores são conhecidos como arrays. Um array é uma coleção de elementos armazenados em uma única variável, permitindo o acesso e manipulação de dados de forma organizada. Aqui está uma explicação detalhada sobre como trabalhar com arrays em Ruby:
+
+Criando Arrays
+Você pode criar um array de várias maneiras:
+
+# Criando um array vazio
+empty_array = []
+
+# Criando um array com alguns elementos
+numbers = [1, 2, 3, 4, 5]
+names = ["Alice", "Bob", "Charlie"]
+
+# Criando um array com elementos de tipos diferentes
+mixed_array = [1, "hello", 3.14, true]
+Acessando Elementos
+Os elementos em um array são acessados por índices, que começam em 0:
+
+numbers = [10, 20, 30, 40, 50]
+puts numbers[0]  # Saída: 10
+puts numbers[2]  # Saída: 30
+Você também pode usar índices negativos para acessar os elementos a partir do final do array:
+
+ruby
+Copiar código
+puts numbers[-1]  # Saída: 50 (último elemento)
+puts numbers[-2]  # Saída: 40 (penúltimo elemento)
+Modificando Arrays
+Você pode adicionar, remover e modificar elementos em um array:
+
+# Adicionando elementos
+numbers.push(60)        # Adiciona 60 ao final do array
+numbers << 70           # Adiciona 70 ao final do array
+
+# Removendo elementos
+numbers.pop             # Remove o último elemento (70)
+numbers.shift           # Remove o primeiro elemento (10)
+
+# Modificando elementos
+numbers[1] = 100        # Altera o segundo elemento para 100
+Iterando Sobre Arrays
+Você pode usar loops para iterar sobre os elementos de um array:
+
+numbers = [1, 2, 3, 4, 5]
+
+# Usando each para iterar
+numbers.each do |number|
+  puts number
+end
+
+# Usando um loop for
+for number in numbers
+  puts number
+end
+Métodos Comuns de Arrays
+Aqui estão alguns métodos úteis para arrays em Ruby:
+
+length ou size: Retorna o número de elementos no array.
+
+puts numbers.length    # Saída: 5
+puts numbers.size      # Saída: 5
+include?: Verifica se um array contém um elemento específico.
+
+puts numbers.include?(3)  # Saída: true
+sort: Ordena os elementos do array.
+
+sorted_numbers = numbers.sort
+puts sorted_numbers       # Saída: [1, 2, 3, 4, 5]
+map: Cria um novo array com os resultados de aplicar um bloco a cada elemento.
+
+squared_numbers = numbers.map { |n| n * n }
+puts squared_numbers       # Saída: [1, 4, 9, 16, 25]
+select: Retorna um novo array contendo todos os elementos para os quais o bloco retorna verdadeiro.
+
+even_numbers = numbers.select { |n| n.even? }
+puts even_numbers          # Saída: [2, 4]
+reject: Retorna um novo array contendo todos os elementos para os quais o bloco retorna falso.
+
+odd_numbers = numbers.reject { |n| n.even? }
+puts odd_numbers           # Saída: [1, 3, 5]
+Conclusão
+Arrays em Ruby são uma estrutura de dados fundamental que permite armazenar e manipular coleções de elementos de maneira eficiente. Você pode acessar, modificar e iterar sobre os elementos de arrays usando uma variedade de métodos e técnicas, o que facilita o trabalho com listas de dados em seus programas Ruby.
+
