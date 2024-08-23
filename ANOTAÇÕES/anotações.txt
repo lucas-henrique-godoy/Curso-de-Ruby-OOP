@@ -579,3 +579,65 @@ a.each do |el|
    puts el * 2
    puts el * 3
  end
+
+-REPETIÇÕES FIXAS COM TIMES: Em Ruby, "repetições fixas com times" se refere ao uso do método times para executar um bloco de código um número fixo de vezes.
+
+Aqui está um resumo de como funciona:
+
+O método times é chamado em um número inteiro.
+Esse método executa o bloco de código associado ao número de vezes especificado.
+O bloco de código recebe o índice da iteração como um argumento, começando de 0 até n-1, onde n é o número especificado.
+Exemplo básico:
+
+# EXEMPLO DE COM SINTAXE PARA MULTIPLAS LINHAS
+5.times do |i|
+  puts "Iteração número #{i}"
+end
+Saída:
+
+Iteração número 0
+Iteração número 1
+Iteração número 2
+Iteração número 3
+Iteração número 4
+Neste exemplo, o bloco de código é executado 5 vezes, e o índice da iteração é passado como i, começando de 0 e indo até 4.
+O times é útil para repetição simples e quando você precisa de um número fixo de iterações.
+
+# EXEMPLOS COM SINTAXE PARA UMA LINHA ↓↓↓
+OUTRO EXEMPLO SEM VARIÁVEL CONTADORA: 
+
+# O método `times` é chamado no número 5.
+# Isso significa que o bloco de código será executado 5 vezes.
+5.times { puts "Lucas" }  # Em cada iteração, imprime a string "Lucas" no console
+
+# Saída esperada:
+# Lucas
+# Lucas
+# Lucas
+# Lucas
+# Lucas
+#
+# O método `times` executa o bloco o número de vezes especificado, 
+# que neste caso é 5.
+
+OUTRO EXEMPLO COM VARIÁVEL CONTADORA:
+
+# O método `times` é chamado no número 5.
+# O bloco de código será executado 5 vezes.
+# A cada iteração, o índice da iteração é passado como variável `x`.
+
+5.times do |x| 
+  puts "#{x} - Lucas"  # Imprime o índice da iteração seguido por " - Lucas"
+end
+
+# Saída esperada:
+# 0 - Lucas
+# 1 - Lucas
+# 2 - Lucas
+# 3 - Lucas
+# 4 - Lucas
+#
+# O método `times` executa o bloco o número de vezes especificado (5 vezes).
+# A variável `x` representa o índice da iteração, começando de 0 e indo até 4.
+
+Ou seja, executa um código numa quantidade determinada de vezes.  Nesse caso 5 vezes(5.times)
