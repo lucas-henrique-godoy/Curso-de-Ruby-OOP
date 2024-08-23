@@ -641,3 +641,22 @@ end
 # A variável `x` representa o índice da iteração, começando de 0 e indo até 4.
 
 Ou seja, executa um código numa quantidade determinada de vezes.  Nesse caso 5 vezes(5.times)
+
+______________________________________________________________________________________________
+
+ORIENTAÇÃO A OBJETOS: É  um paradigma para o desenvolvimento de software que baseia-se na utilização de componentes individuais (objetos) que colaboram para construir sistemas mais complexos. A colaboração entre os objetos é feita através do envio de mensagens(requisição de serviços). O paradigma de objetos baseia-se em alguns conceitos como: 
+- Classes
+- Objetos
+- Encapsulamento
+- Herança
+- Polimorfismo 
+- Entre outros.
+
+FUNDAMENTOS: 
+- Qualquer coisa é um objeto
+- Objetos realizam tarefas através da requisição de serviços a outros objetos.
+- Cada objeto pertence a uma determinada classe. Uma classe agrupa objetos similares.
+- A classe é um repositório para comportamento associado ao objeto.
+- Classes são organizadas em hierarquias.
+
+
