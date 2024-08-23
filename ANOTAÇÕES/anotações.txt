@@ -659,4 +659,21 @@ FUNDAMENTOS:
 - A classe é um repositório para comportamento associado ao objeto.
 - Classes são organizadas em hierarquias.
 
+PILARES:
+- Abstração: Imaginar o objeto que tenham - Identidade única(ex nome), Atributos(características), Métodos(ações).
+- Encapsulamento: Esconder as propriedades dos objetos para obter mais segurança.
+- Herança: Permite o reúso de código.
+- Polimorfismo: É a capacidade de referenciar um objeto de várias formas diferentes.
+
+CLASSE: Uma classe é um gabarito para a definição de objetos. Através da definição de uma classe, descreve-se que propriedades/atributos e métodos/ações o objeto terá.
+Em resumo uma classe representa um conjunto de objetos com características afins. Uma classe define o comportamento dos objetos através de seus métodos, e quais estados ele é capaz de manter através de seus atributos.
+
+A partir da classe(forma/gabarito) eu posso gerar varios objetos "iguais". Quando eu gero esses objetos iguais, a única coisa que vai mudar entre eles é: quais atributos cada um vai ter, e quais são os métodos que els vão poder executar.
+
+É possível especificar classes para entidades físicas, conceituais ou de software. EX:
+- Entidade física: caminhão, carro, bicicleta, etc.
+- Entidade Conceitual: processo químico, matrícula, etc.
+- Entidade de Software: lista encadeada, arquivo, etc.
+
+Uma classe em programação é como um modelo que define as características e ações de seus objetos. Por exemplo, se criarmos uma classe chamada Pessoa, podemos gerar um objeto específico, como Lucas. Esse objeto tem atributos como nome, que será "Lucas", e pode ter outros atributos, como a cor dos olhos. Além disso, o objeto pode realizar ações definidas pela classe, como pular ou andar. Todos os objetos criados a partir dessa classe terão as mesmas características e ações básicas definidas no modelo da classe.
 
