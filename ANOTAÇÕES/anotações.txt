@@ -160,6 +160,11 @@ Atribuição Divisiva (/=): Divide a variável por um valor.
 Atribuição de Módulo (%=): Calcula o módulo e atribui o resultado.
 Atribuição de Potenciação (**=): Eleva a variável à potência de um valor.
 
+OPERADORES DE INTERVALO: Servem para quando precisarmos ir de um número a outro.
+No Ruby, os operadores de intervalo são usados para criar intervalos de valores. Eles são:
+    .. (intervalo fechado): inclui o valor final. Exemplo: 1..5 representa os números de 1 a 5. (ou seja vai ate o ultimo elemento)
+    ... (intervalo exclusivo): exclui o valor final. Exemplo: 1...5 representa os números de 1 a 4. (ou seja vai ate o penultimo elemento)
+
 - ESTRUTURAS CONDICIONAIS: Em Ruby, estruturas condicionais são usadas para executar diferentes blocos de código dependendo de uma condição. Elas permitem que o programa tome decisões e siga diferentes caminhos de execução. Vamos explorar as principais estruturas condicionais do Ruby:
 
 1. if
