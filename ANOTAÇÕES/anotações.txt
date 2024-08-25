@@ -683,4 +683,6 @@ Uma classe em programação é como um modelo que define as características e a
 * Visão Interna(COMO o obejto faz).
 * Visão Externa(O QUE o objeto faz).
 
+-EXEMPLO DE ENCAPSULAMENTO: O funcionamento interno de um telefone é escondido(ou encapsulado)do usuário. Para o usuário realizar uma chamada telefônica(visão externa) ele não precisa conhecer os detalhes da eletrônica utilizados no teelfone(visão interna).
+
 
