@@ -683,6 +683,14 @@ Uma classe em programação é como um modelo que define as características e a
 * Visão Interna(COMO o obejto faz).
 * Visão Externa(O QUE o objeto faz).
 
+Em se tratando de classes, o encapsulado é obtido através da vidibilidade, conhecida tambem como "modificadores de acesso". Os modificadores de acessos mais comuns são:
+
+- public/público: Representado por um sinal de "+" na notaçãi UML. Elementos declarados como público podem ser acessados a partir de qualqueroutra classe.
+- private/privado: Representado por um sinal de "-" na notação UML. Elementos private só podem ser acessados pela própria classe.
+- protected/protegido: Representado por um sinal de sustenido "#" na notação UML. Elementos protected só podem ser acessados pela própria classe e por suas descendentes.
+
+
 -EXEMPLO DE ENCAPSULAMENTO: O funcionamento interno de um telefone é escondido(ou encapsulado)do usuário. Para o usuário realizar uma chamada telefônica(visão externa) ele não precisa conhecer os detalhes da eletrônica utilizados no teelfone(visão interna).
+
 
 
