@@ -1,0 +1,31 @@
+
++------------------------------+
+|            Tablet            |
++------------------------------+
+| - Capacidade: interger       |
+| - Tamanho da Tela: float     |
+| - Sistema Operacional: string|
++------------------------------+
+| + Ligar(string: valor)       |
+| + Carregar()                 |
+| + Conectar Wifi(string: senha)|
++------------------------------+
+
+
+
++--------------------------------+
+|        BoletoBancario           |
++--------------------------------+
+| - Cód. Barras: string           |
+| - Valor: float                  |
+| - Data de Vencimento: string    |
++--------------------------------+
+| + Pagar()                       |
+| + Aplicar Juros(float: valor)   |
++--------------------------------+
+
+
+
+
+
+
