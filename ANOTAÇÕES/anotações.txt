@@ -689,8 +689,9 @@ Em se tratando de classes, o encapsulado é obtido através da vidibilidade, con
 - private/privado: Representado por um sinal de "-" na notação UML. Elementos private só podem ser acessados pela própria classe.
 - protected/protegido: Representado por um sinal de sustenido "#" na notação UML. Elementos protected só podem ser acessados pela própria classe e por suas descendentes.
 
-
 -EXEMPLO DE ENCAPSULAMENTO: O funcionamento interno de um telefone é escondido(ou encapsulado)do usuário. Para o usuário realizar uma chamada telefônica(visão externa) ele não precisa conhecer os detalhes da eletrônica utilizados no teelfone(visão interna).
+
+-OBJETO: 
 
 
 
