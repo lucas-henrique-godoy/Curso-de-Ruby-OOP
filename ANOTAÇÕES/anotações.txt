@@ -699,5 +699,7 @@ Em se tratando de classes, o encapsulado é obtido através da vidibilidade, con
 
 A criação de um objeto consiste em sua instanciação, segundo, " cada instância tem seus próprios valores de atributos, mas compartilha o nome e os comportamentos dos atributos com as outras instâncias da classe.
 
+EXERCÍCIO: FAZER!
+
 
 
