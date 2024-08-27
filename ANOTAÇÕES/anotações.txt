@@ -718,6 +718,19 @@ class Conta
   corpoDaClasse (atributos e métodos)
 end
 
-Convenções a serem usadas: O nome da classe inicia-se com letra maiúscula e pára nomes compostos devemos usar o padrão CamelCase. Ex: NomeDaMinhaClasse
+Convenções a serem usadas: O nome da classe inicia-se com letra maiúscula e pára nomes compostos devemos usar o padrão CamelCase. Ex: NomeDaMinhaClasse.
+O corpo de uma classe deve conter: Atributos, Metodos,  Construtor(método de inicialização).
+Instanciando uma classe: 
+* obj1 = Classe.new
 
 
+Instanciando uma classe no irb:
+PS C:\Users\lucas\OneDrive\Área de Trabalho\Curso-de-Ruby-OOP> irb
+irb(main):001> require_relative "09-definindo_classes" 
+=> true
+irb(main):002> obj1 = Conta.new
+=> #<Conta:0x000001acc8c622a0>
+irb(main):003> obj1
+=> #<Conta:0x000001acc8c622a0>
+irb(main):004> obj1.class
+=> Conta
