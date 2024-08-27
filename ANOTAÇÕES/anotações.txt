@@ -734,3 +734,10 @@ irb(main):003> obj1
 => #<Conta:0x000001acc8c622a0>
 irb(main):004> obj1.class
 => Conta
+
+Em ruy definimos um método da seguinte forma:
+class Pessoa
+  def gritar
+    #corpo do método
+  end
+end
