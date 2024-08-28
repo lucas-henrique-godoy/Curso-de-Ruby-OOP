@@ -718,7 +718,7 @@ class Conta
   corpoDaClasse (atributos e métodos)
 end
 
-Convenções a serem usadas: O nome da classe inicia-se com letra maiúscula e pára nomes compostos devemos usar o padrão CamelCase. Ex: NomeDaMinhaClasse.
+- Convenções a serem usadas: O nome da classe inicia-se com letra maiúscula e pára nomes compostos devemos usar o padrão CamelCase. Ex: NomeDaMinhaClasse.
 O corpo de uma classe deve conter: Atributos, Metodos,  Construtor(método de inicialização).
 Instanciando uma classe: 
 * obj1 = Classe.new
@@ -741,3 +741,5 @@ class Pessoa
     #corpo do método
   end
 end
+
+- Convenções a serem usadas: O nome do método inicia-se com letra minúscula e para nomes compostos devemos usar o padrão snake_case. EX: nome_do_meu_metodo
