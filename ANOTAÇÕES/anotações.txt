@@ -742,4 +742,9 @@ class Pessoa
   end
 end
 
-- Convenções a serem usadas: O nome do método inicia-se com letra minúscula e para nomes compostos devemos usar o padrão snake_case. EX: nome_do_meu_metodo
+- Convenções a serem usadas: O nome do método inicia-se com letra minúscula e para nomes compostos devemos usar o padrão snake_case. EX: nome_do_meu_metodo.
+
+- Métodos com parâmetros: 
+def gritar(texto)
+  puts texto
+end
