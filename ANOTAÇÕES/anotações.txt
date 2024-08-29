@@ -748,3 +748,8 @@ end
 def gritar(texto)
   puts texto
 end
+
+- Retorno do método:
+def gritar(texto)
+  return texto
+end
