@@ -692,8 +692,10 @@ Em se tratando de classes, o encapsulado é obtido através da vidibilidade, con
 -EXEMPLO DE ENCAPSULAMENTO: O funcionamento interno de um telefone é escondido(ou encapsulado)do usuário. Para o usuário realizar uma chamada telefônica(visão externa) ele não precisa conhecer os detalhes da eletrônica utilizados no teelfone(visão interna).
 
 -OBJETO: Classes são fábricas de objetos. Objetos são instâncias de uma classe, ou seja vieram de uma classe.
-* Um objeto é capaz de armazenar estads através de seus atributos e reagir a mensagens enviadas a ele, assim como se relacionar e enviar mensagens a outros objetos.
-* Um objeto é qualquer indivíduo, lugar, evento, coisa, tela, relatório ou conceitoque seja aplicável ao sistema.
+- INSTÂNCIA: uma instância é um objeto criado a partir de uma classe em programação orientada a objetos.
+
+* Um objeto é capaz de armazenar estadOs através de seus atributos e reagir a mensagens enviadas a ele, assim como se relacionar e enviar mensagens a outros objetos.
+* Um objeto é qualquer indivíduo, lugar, evento, coisa, tela, relatório ou conceito que seja aplicável ao sistema.
 * Todo objeto pertence a uma determinada classe e possui atributos próprios.
 * Os atributos são mutáveis e podem receber diferentes valores de acordo com as características do obejto.
 
