@@ -31,7 +31,9 @@ end
 #################################################################################
 
 obj1 = Pessoa.new
-result = obj1.gritar("asdfadf")
-puts result
+obj1.guardar_nome("Lucas")
+obj1.guardar_idade(27)
 
-puts obj1.agradecer
+obj2 = Pessoa.new
+obj2.guardar_nome("Wendel")
+obj2.guardar_idade(49)
