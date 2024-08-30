@@ -1,6 +1,8 @@
 class Pessoa
-  @nome = nil
-  @idade = nil
+  def initialize
+    @nome = nil
+    @idade = nil
+  end
 
   def guardar_nome(nome)
     @nome = nome
@@ -15,25 +17,31 @@ class Pessoa
   end
 
   def mostrar_idade
-    puts @idade
-  end
-
-
-  def gritar(texto = "Grrrhhhhh!")
-    "Gritando... #{texto}"
-  end
-
-  def agradecer(texto = "Obrigado!")
-    texto
+    @idade
   end
 end
 
+#   def gritar(texto = "Grrrhhhhh!")
+#     "Gritando... #{texto}"
+#   end
+
+#   def agradecer(texto = "Obrigado!")
+#     texto
+#   end
+# end
+
 #################################################################################
 
-obj1 = Pessoa.new
-obj1.guardar_nome("Lucas")
-obj1.guardar_idade(27)
+pessoa1 = Pessoa.new
+pessoa1.guardar_nome("Lucas")
+pessoa1.guardar_idade(27)
 
-obj2 = Pessoa.new
-obj2.guardar_nome("Wendel")
-obj2.guardar_idade(49)
+pessoa2 = Pessoa.new
+pessoa2.guardar_nome("Wendel")
+pessoa2.guardar_idade(49)
+
+puts pessoa1.mostrar_nome
+puts pessoa1.mostrar_idade
+
+puts pessoa2.mostrar_nome
+puts pessoa2.mostrar_idade
