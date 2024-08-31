@@ -17,7 +17,7 @@ class Pessoa
   def idade
     @idade
   end
-end
+
 
   def gritar(texto = "Grrrhhhhh!")
     "Gritando... #{texto}"
@@ -26,7 +26,7 @@ end
   def agradecer(texto = "Obrigado!")
     texto
   end
- end
+end
 
 pessoa1 = Pessoa.new
 pessoa1.nome = "Lucas"
