@@ -1,7 +1,6 @@
 class Pessoa
-  attr_ace
-  @idade = nil
-
+  attr_accessor :nome # ISSO REPRESENTA A PARTE COMENTADA ABAIXO
+  attr_accessor :idade # ISSO REPRESENTA A PARTE COMENTADA ABAIXO
   # def nome=(nome)
   #   @nome = nome
   # end
