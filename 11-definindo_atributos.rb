@@ -1,23 +1,22 @@
 class Pessoa
-  @nome = nil
+  attr_ace
   @idade = nil
 
-  def nome=(nome)
-    @nome = nome
-  end
+  # def nome=(nome)
+  #   @nome = nome
+  # end
 
-  def nome
-    @nome
-  end
+  # def nome
+  #   @nome
+  # end
 
-  def idade=(idade)
-    @idade = idade
-  end
+  # def idade=(idade)
+  #   @idade = idade
+  # end
 
-  def idade
-    @idade
-  end
-
+  # def idade
+  #   @idade
+  # end
 
   def gritar(texto = "Grrrhhhhh!")
     "Gritando... #{texto}"
