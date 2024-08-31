@@ -792,6 +792,131 @@ ________________________________________________________________________________
 GET - Pegar.
 SET- Guardar.
 
+- ACESSORES: No Ruby, acessores são métodos que permitem o acesso e a modificação dos atributos de uma classe. Eles são uma maneira conveniente de gerenciar o acesso a variáveis de instância e encapsular a lógica de leitura e escrita desses atributos.
+Tipos de Acessores
+
+    Leitura e Escrita Simples
+        Leitura (attr_reader): Cria um método de leitura para uma variável de instância, permitindo que você acesse o valor dessa variável de fora da classe, mas não o modifique diretamente.
+        Escrita (attr_writer): Cria um método de escrita para uma variável de instância, permitindo que você modifique o valor dessa variável de fora da classe, mas não leia o valor diretamente.
+        Leitura e Escrita (attr_accessor): Cria métodos de leitura e escrita para uma variável de instância, permitindo tanto a leitura quanto a modificação do valor da variável de fora da classe.
+
+    Métodos de Acesso Personalizados
+        Além dos acessores automáticos, você pode definir métodos de acesso e modificação personalizados para adicionar lógica adicional ao acessar ou alterar os valores das variáveis de instância.
+
+Exemplo de Uso
+
+Aqui está um exemplo de como usar os acessores no Ruby:
+
+ruby
+
+class Pessoa
+  # Definindo atributos de instância com acessores
+  attr_accessor :nome, :idade
+
+  # Método initialize para inicializar os atributos
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+  end
+end
+
+# Criando uma nova instância da classe Pessoa
+pessoa = Pessoa.new("Lucas", 27)
+
+# Usando os métodos de leitura e escrita criados automaticamente
+puts pessoa.nome  # Saída: Lucas
+puts pessoa.idade # Saída: 27
+
+# Modificando os valores dos atributos
+pessoa.nome = "Wendel"
+pessoa.idade = 49
+
+# Usando os métodos de leitura após modificação
+puts pessoa.nome  # Saída: Wendel
+puts pessoa.idade # Saída: 49
+
+Explicação dos Acessores
+
+    attr_reader
+        Uso: attr_reader :nome
+        O que faz: Cria um método chamado nome que retorna o valor da variável de instância @nome. Não cria um método para definir o valor de @nome.
+
+    ruby
+
+class Pessoa
+  attr_reader :nome
+
+  def initialize(nome)
+    @nome = nome
+  end
+end
+
+attr_writer
+
+    Uso: attr_writer :nome
+    O que faz: Cria um método chamado nome= que define o valor da variável de instância @nome. Não cria um método para ler o valor de @nome.
+
+ruby
+
+class Pessoa
+  attr_writer :nome
+
+  def initialize(nome)
+    @nome = nome
+  end
+end
+
+attr_accessor
+
+    Uso: attr_accessor :nome
+    O que faz: Cria tanto o método nome para leitura quanto o método nome= para escrita. Isso permite acessar e modificar a variável de instância @nome.
+
+ruby
+
+    class Pessoa
+      attr_accessor :nome
+
+      def initialize(nome)
+        @nome = nome
+      end
+    end
+
+Métodos de Acesso Personalizados
+
+Se você precisar de lógica personalizada ao acessar ou modificar atributos, você pode definir métodos de acesso manualmente:
+
+ruby
+
+class Pessoa
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+  end
+
+  def nome
+    @nome
+  end
+
+  def nome=(novo_nome)
+    @nome = novo_nome.upcase # Exemplo de lógica personalizada
+  end
+
+  def idade
+    @idade
+  end
+
+  def idade=(nova_idade)
+    @idade = nova_idade
+  end
+end
+
+pessoa = Pessoa.new("Lucas", 27)
+puts pessoa.nome         # Saída: LUCAS (nome convertido para maiúsculas)
+
+Conclusão
+
+Acessores no Ruby são uma maneira poderosa e concisa de gerenciar o acesso a variáveis de instância. Usando attr_reader, attr_writer, e attr_accessor, você pode rapidamente criar métodos para acessar e modificar atributos, enquanto métodos personalizados oferecem flexibilidade para adicionar lógica adicional ao acesso e modificação dos dados.
+
 
 
 
