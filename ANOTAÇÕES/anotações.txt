@@ -783,9 +783,14 @@ pessoa2 = Pessoa.new("Bob", 25)
 pessoa1.mostrar_informacoes  # Saída: Nome: Alice, Idade: 30
 pessoa2.mostrar_informacoes  # Saída: Nome: Bob, Idade: 25
 Neste exemplo, @nome e @idade são variáveis de instância. Cada objeto pessoa1 e pessoa2 tem seus próprios valores para essas variáveis, que são distintos e específicos para cada instância da classe Pessoa. Isso permite que cada objeto mantenha e gerencie seu próprio estado de maneira independente.
-______________________________________________________________________________________________
+___________________________________________________________________________________________________________________
 
 EXEMPLO DE EXPLICAÇÃO(MINHA) DO PROCESSO DE CRIAR E USAR UMA CLASSE EM RUBY : entao basicamente primeiro crio uma classe e inicializo as variáveis de instancia dentro do método initialize, depois crio os métodos que a classe ira realizar utilizando as variáveis de instancia.  Depois instancio os objetos passando os valores dos parâmetros e por ultimo mostro os valores dos objetos na tela.
+
+___________________________________________________________________________________________________________________
+
+GET - Pegar.
+SET- Guardar.
 
 
 

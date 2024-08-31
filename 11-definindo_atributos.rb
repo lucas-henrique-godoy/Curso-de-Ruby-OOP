@@ -4,19 +4,19 @@ class Pessoa
     @idade = nil
   end
 
-  def guardar_nome(nome)
+  def set_nome(nome)
     @nome = nome
   end
 
-  def mostrar_nome
+  def get_nome
     @nome
   end
 
-  def guardar_idade(idade)
+  def set_idade(idade)
     @idade = idade
   end
 
-  def mostrar_idade
+  def get_idade
     @idade
   end
 end
@@ -33,15 +33,15 @@ end
 #################################################################################
 
 pessoa1 = Pessoa.new
-pessoa1.guardar_nome("Lucas")
-pessoa1.guardar_idade(27)
+pessoa1.set_nome("Lucas")
+pessoa1.set_idade(27)
 
 pessoa2 = Pessoa.new
-pessoa2.guardar_nome("Wendel")
-pessoa2.guardar_idade(49)
+pessoa2.set_nome("Wendel")
+pessoa2.set_idade(49)
 
-puts pessoa1.mostrar_nome
-puts pessoa1.mostrar_idade
+puts pessoa1.get_nome
+puts pessoa1.get_idade
 
-puts pessoa2.mostrar_nome
-puts pessoa2.mostrar_idade
+puts pessoa2.get_nome
+puts pessoa2.get_idade
