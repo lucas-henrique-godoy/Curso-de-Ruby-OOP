@@ -918,7 +918,16 @@ Conclusão
 Acessores no Ruby são uma maneira poderosa e concisa de gerenciar o acesso a variáveis de instância. Usando attr_reader, attr_writer, e attr_accessor, você pode rapidamente criar métodos para acessar e modificar atributos, enquanto métodos personalizados oferecem flexibilidade para adicionar lógica adicional ao acesso e modificação dos dados.
 
 
--MÉTODOS CONSTRUTPRES OU MÉTODOS DE INICIALIZAÇÃO: Permitem inicializar um objeto com dados "padrão". É invocado automaticamente quando instanciamos e criamos um objeto, assim preenchendo os atributos. É possível passar quantos parâmetros voce quiser.
+-MÉTODOS CONSTRUTORES OU MÉTODOS DE INICIALIZAÇÃO: SINTAXE:
+
+class Pessoa
+    def initialize(nome)
+    @var_nome = nome
+  end
+end
+
+
+Permitem inicializar um objeto com dados "padrão". É invocado automaticamente quando instanciamos e criamos um objeto, assim preenchendo os atributos. É possível passar quantos parâmetros voce quiser.
 
 
 
