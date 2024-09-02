@@ -19,6 +19,8 @@ puts cachorro1.nome
 puts cachorro1.raca
 puts cachorro1.latir
 
+puts "--------------------------------------------------------"
+
 puts cachorro2.nome
 puts cachorro2.raca
 puts cachorro2.latir("AUAUAU")
