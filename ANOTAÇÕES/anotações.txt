@@ -930,4 +930,10 @@ end
 Permitem inicializar um objeto com dados "padrão". É invocado automaticamente quando instanciamos e criamos um objeto, assim preenchendo os atributos. É possível passar quantos parâmetros voce quiser.
 
 
+-HERANÇA ENTRE CLASSES: 
+
+ClasseFilha < ClassePai
+SubClass < SuperClass
+
+
 
