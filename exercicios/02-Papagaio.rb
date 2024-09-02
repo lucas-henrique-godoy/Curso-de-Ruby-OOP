@@ -7,8 +7,8 @@ class Papagaio
     @idade = idade
   end
 
-  def repetir_frase(texto = "curupaco!")
-    texto
+  def repetir_frase(frase= "curupaco!")
+    frase
   end
 end
 
