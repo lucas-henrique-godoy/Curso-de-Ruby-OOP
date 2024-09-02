@@ -2,7 +2,7 @@ class Papagaio
   attr_accessor :nome
   attr_accessor :idade
 
-  def initialize(nome, idade = 0)
+  def initialize(nome, idade)
     @nome = nome
     @idade = idade
   end
@@ -12,14 +12,15 @@ class Papagaio
   end
 end
 
-papagaio1 = Papagaio.new("Loro José", 50)
-papagaio2 = Papagaio.new("Zé Carioca")
+papagaio1 = Papagaio.new("Loro José", 4)
+papagaio2 = Papagaio.new("Zé Carioca", 5)
 
 puts papagaio1.nome
 puts papagaio1.idade
+puts papagaio1.repetir_frase
+
+puts "--------------------------------------------------------"
 
 puts papagaio2.nome
 puts papagaio2.idade
-
-puts papagaio1.repetir_frase
 puts papagaio2.repetir_frase("Louro quer biscoito!")
