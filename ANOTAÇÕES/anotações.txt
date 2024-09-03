@@ -930,10 +930,12 @@ end
 Permitem inicializar um objeto com dados "padrão". É invocado automaticamente quando instanciamos e criamos um objeto, assim preenchendo os atributos. É possível passar quantos parâmetros voce quiser.
 
 
--HERANÇA ENTRE CLASSES: 
+-HERANÇA ENTRE CLASSES: Conceito: Herança permite que uma classe (subclasse) herde métodos e atributos de outra classe (superclasse), facilitando a reutilização e organização do código.
 
-ClasseFilha < ClassePai
-SubClass < SuperClass
+Sintaxe Básica: Use < para definir que uma classe herda de outra.
+
+ClasseFilha < ClassePai ou pode ser chamada de SubClass < SuperClass
+
 
 
 
