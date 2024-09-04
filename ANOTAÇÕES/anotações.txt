@@ -936,6 +936,8 @@ Sintaxe Básica: Use < para definir que uma classe herda de outra.
 
 ClasseFilha < ClassePai ou pode ser chamada de SubClass < SuperClass
 
+- Method Overriding: Sobrescrever métodos da classe pai.
+
 
 
 
