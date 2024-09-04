@@ -6,7 +6,7 @@ end
 
 class Franqueado < Franquia
   def descricao
-    puts super # Chama o método 'descricao' da classe pai (Franquia) e imprime o resultado no console
+    puts super # Invocando o método descrição da classe pai/ Conta.   Chama o método 'descricao' da classe pai (Franquia) e imprime o resultado no console
     "Franqueado!"
   end
 end
@@ -17,6 +17,8 @@ puts f.descricao
 puts "====================="
 ff = Franqueado.new
 puts ff.descricao
+
+puts "_________________________________________________"
 
 #_____________________________________________________________________________________________
 
@@ -43,7 +45,9 @@ end
 c = Conta.new("001", 100.00)
 puts c.numero
 puts c.saldo
+
 puts "_________________________________________________"
+
 ce = ContaEspecial.new("002", 200.00, 1000.00)
 puts ce.numero
 puts ce.saldo
