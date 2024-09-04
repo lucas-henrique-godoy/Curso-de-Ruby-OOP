@@ -935,7 +935,8 @@ Sintaxe Básica: Use < para definir que uma classe herda de outra.
 
 ClasseFilha < ClassePai ou pode ser chamada de SubClass < SuperClass
 
-- METHOD OVERRIDING: Sobrescrever métodos da classe pai. Sobrescrita de métodos é um conceito em programação orientada a objetos onde uma subclasse fornece uma implementação específica para um método que já foi definido na sua superclasse. Isso permite que a subclasse altere o comportamento do método herdado para atender às suas necessidades específicas.
+- METHOD OVERRIDING: A sobrescrita de métodos (method Overriding permite o desenvolvedor reescrever um método que já existe na classe pai.)
+Sobrescrever métodos da classe pai. Sobrescrita de métodos é um conceito em programação orientada a objetos onde uma subclasse fornece uma implementação específica para um método que já foi definido na sua superclasse. Isso permite que a subclasse altere o comportamento do método herdado para atender às suas necessidades específicas.
 Como o Overriding é Usado no Código:
 
     Classe Base (Calculadora): Define um método somar que retorna a soma simples de dois números. Esta é a implementação padrão.
@@ -947,7 +948,8 @@ Como o Overriding é Usado no Código:
 - BENEFÍCIOS DO OVERRIDING: Personalização: Permite que subclasses personalizem ou modifiquem o comportamento de métodos herdados sem alterar a implementação da classe base.
     Polimorfismo: Facilita o polimorfismo, onde o método chamado é determinado pelo tipo da instância do objeto em tempo de execução, permitindo que diferentes comportamentos sejam executados dependendo da classe do objeto.Em Resumo: No código fornecido, a sobrescrita de métodos é usada para alterar o comportamento do método somar quando chamado a partir de uma instância da CalculadoraFashion. Isso demonstra como você pode modificar ou estender a funcionalidade de uma classe base, oferecendo uma versão específica do método para a subclasse.
 
-- SUPER: Em Ruby, a palavra-chave super é utilizada dentro de um método para chamar o método correspondente da classe pai (ou superclasse). Isso é útil quando você está sobrescrevendo um método em uma subclasse e deseja adicionar ou modificar o comportamento do método da classe pai.O super serve basicamente para  invocar o método correspondente na classe pai.    
+- SUPER: É uma palavra usada para invocar o método de mesmo nome na super classe.
+Em Ruby, a palavra-chave super é utilizada dentro de um método para chamar o método correspondente da classe pai (ou superclasse). Isso é útil quando você está sobrescrevendo um método em uma subclasse e deseja adicionar ou modificar o comportamento do método da classe pai.O super serve basicamente para  invocar o método correspondente na classe pai.    
 
 
 
