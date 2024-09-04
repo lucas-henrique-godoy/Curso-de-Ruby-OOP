@@ -6,7 +6,7 @@ end
 
 class Franqueado < Franquia
   def descricao
-    puts super # Invocando o método descrição da classe pai/ Conta.   Chama o método 'descricao' da classe pai (Franquia) e imprime o resultado no console
+    puts super # Invocando o método descrição da classe pai/Franquia. / Chama o método 'descricao' da classe pai (Franquia) e imprime o resultado no console
     "Franqueado!"
   end
 end
