@@ -951,7 +951,7 @@ Como o Overriding é Usado no Código:
 - SUPER: É uma palavra usada para invocar o método de mesmo nome na super classe.
 Em Ruby, a palavra-chave super é utilizada dentro de um método para chamar o método correspondente da classe pai (ou superclasse). Isso é útil quando você está sobrescrevendo um método em uma subclasse e deseja adicionar ou modificar o comportamento do método da classe pai.O super serve basicamente para  invocar o método correspondente na classe pai.  
 
-- SELF: É uma palavra reservada que da acesso ao objero corrente. Assim dizemos que ao usarmos o objeto.meth estamos enviando o método ao objeto, ou seja quer dizer que estamos enviando uma mensagem do método para o objeto
+- SELF: Self é uma referência ao objeto que está executando o código no momento. No Ruby, o self é um conceito fundamental que se refere ao objeto atual no contexto em que um pedaço de código está sendo executado. Ele é usado para acessar e manipular o próprio objeto no qual o código está sendo executado. .É uma palavra reservada que da acesso ao objero corrente. Assim dizemos que ao usarmos o objeto.meth estamos enviando o método ao objeto, ou seja quer dizer que estamos enviando uma mensagem do método para o .
 
 
 
