@@ -10,8 +10,17 @@ class Teste1
   end
 end
 
+class Teste2
+  def mostrar
+        puts "FIM!"
+  end
+end
+
 t = Teste.new
 t.meu_self
 
 t1 = Teste1.new
 t1.meu_self
+
+t2 = Teste2.new
+puts t2.mostrar
