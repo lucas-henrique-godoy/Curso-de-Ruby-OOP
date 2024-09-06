@@ -967,7 +967,7 @@ def method
 end
 __________________________________________________________________________________
 
-Método de classe: Métodos de classe são definidos para a classe como um todo, e não para instâncias individuais. Eles são usados quando você deseja que um método pertença à classe em si, e não a um objeto específico da classe.
+Método de classe: Métodos de classe são definidos para a classe como um todo, e não para instâncias individuais. Eles são usados quando você deseja que um método pertença à classe em si, e não a um objeto específico da classe ou em alguns momentos voce só preisa classe como um repositório, como um local onde você vai armazenar algumas funções ou métodos,  e só para usar aquele médodo independenteda instância.
 
 Como Funcionam
 Definição: São definidos usando def self.nome_do_metodo dentro da classe.
