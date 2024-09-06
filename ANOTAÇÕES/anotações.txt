@@ -954,5 +954,19 @@ Em Ruby, a palavra-chave super é utilizada dentro de um método para chamar o m
 - SELF: Self é uma referência ao objeto que está executando o código no momento. No Ruby, o self é um conceito fundamental que se refere ao objeto atual no contexto em que um pedaço de código está sendo executado. Ele é usado para acessar e manipular o próprio objeto no qual o código está sendo executado. .É uma palavra reservada que da acesso ao objero corrente. Assim dizemos que ao usarmos o objeto.meth estamos enviando o método ao objeto, ou seja quer dizer que estamos enviando uma mensagem do método para o.
 Dependendo do local o self vai ser diferente.
 
+- MÉTODOS DE INSTÂNCIA vs MÉTODOS DE CLASSE:
+Método de instância:
+
+def method
+      
+end
+__________________________________________________________________________________
+
+Método de classe:
+
+def self.method
+    
+end
+
 
 
