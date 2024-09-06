@@ -955,14 +955,24 @@ Em Ruby, a palavra-chave super é utilizada dentro de um método para chamar o m
 Dependendo do local o self vai ser diferente.
 
 - MÉTODOS DE INSTÂNCIA vs MÉTODOS DE CLASSE:
-Método de instância:
+Método de instância: Métodos de instância são definidos dentro de uma classe e operam sobre instâncias específicas dessa classe. Eles podem acessar e modificar os atributos de uma instância.
+
+Como Funcionam
+Definição: São definidos usando def dentro da classe, sem prefixo especial.
+
+Acesso: Operam sobre um objeto específico e podem acessar os atributos dessa instância usando @atributo.
 
 def method
       
 end
 __________________________________________________________________________________
 
-Método de classe:
+Método de classe: Métodos de classe são definidos para a classe como um todo, e não para instâncias individuais. Eles são usados quando você deseja que um método pertença à classe em si, e não a um objeto específico da classe.
+
+Como Funcionam
+Definição: São definidos usando def self.nome_do_metodo dentro da classe.
+
+Acesso: Não podem acessar atributos de instância diretamente, mas podem acessar e modificar variáveis de classe e outras propriedades da classe.
 
 def self.method
     
