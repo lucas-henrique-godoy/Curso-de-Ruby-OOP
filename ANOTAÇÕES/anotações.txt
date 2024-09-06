@@ -962,6 +962,7 @@ Definição: São definidos usando def dentro da classe, sem prefixo especial.
 
 Acesso: Operam sobre um objeto específico e podem acessar os atributos dessa instância usando @atributo.
 
+SINTAXE:
 def method
       
 end
@@ -974,6 +975,7 @@ Definição: São definidos usando def self.nome_do_metodo dentro da classe.
 
 Acesso: Não podem acessar atributos de instância diretamente, mas podem acessar e modificar variáveis de classe e outras propriedades da classe.
 
+SINTAXE:
 def self.method
     
 end
