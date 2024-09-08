@@ -980,12 +980,10 @@ def self.method
     
 end
 
-
-- Constantes: Constantes em Ruby são variáveis cujo valor não deve mudar após ser definido. Elas são representadas por nomes em maiúsculas e, por convenção, não devem ser alteradas. Por exemplo:
-
+_____________________________________________________________________________________________________________________
+- Constantes: Em Ruby são variáveis cujo valor não deve mudar após ser definido. Elas são representadas por nomes em maiúsculas e, por convenção, não devem ser alteradas. Por exemplo:
 PI = 3.14159
 Se você tentar modificar o valor de uma constante, Ruby irá gerar um aviso, mas a alteração ainda será permitida.
-
 
 
 - Classes constantes:
