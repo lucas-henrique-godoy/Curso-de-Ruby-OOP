@@ -1,20 +1,22 @@
-class Teste
-  PI = 3.14
+# Definindo a classe Teste
+
+class Teste        # Definindo constantes dentro da classe Teste
+  PI = 3.14        # Constante PI com o valor 3.14
+  NOME_APP = "Sistema de CRM" # Constante NOME_APP com o valor "Sistema de CRM"
+  NOME_CLIENTE = "Fulano de tal" # Constante NOME_CLIENTE com o valor "Fulano de tal"
 end
 
-puts Teste::PI
+# Acessando e imprimindo as constantes da classe Teste
 
-# Estou definindo uma constante PI dentro da classe Teste e depois imprimindo o valor dessa constante.
+puts Teste::PI            # Imprime o valor da constante PI (3.14)
+puts Teste::NOME_APP      # Imprime o valor da constante NOME_APP ("Sistema de CRM")
+puts Teste::NOME_CLIENTE # Imprime o valor da constante NOME_CLIENTE ("Fulano de tal")
 
-# Explicação:
-# Definição da Classe e Constante:
-# class Teste define uma nova classe chamada Teste.
-# PI = 3.14 define uma constante PI com o valor 3.14 dentro da classe Teste.
-# Acesso à Constante:
-# Teste::PI acessa a constante PI da classe Teste.
-# Impressão:
-# puts Teste::PI imprime o valor da constante PI no console.
-# Resultado:
-# Quando você executa o código, a saída será:
-# 3.14
-# Isso acontece porque Teste::PI acessa a constante PI definida dentro da classe Teste e puts imprime seu valor.
+# Explicação do código:
+# - A classe Teste é definida com três constantes: PI, NOME_APP, e NOME_CLIENTE.
+# - Essas constantes são acessadas utilizando o operador de escopo (::) para referenciar a classe Teste.
+# - O método puts imprime o valor das constantes no console.
+# - A saída do código será:
+#   3.14
+#   Sistema de CRM
+#   Fulano de tal
