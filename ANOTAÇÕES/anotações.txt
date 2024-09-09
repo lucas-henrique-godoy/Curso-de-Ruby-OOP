@@ -1005,5 +1005,5 @@ Exemplos de uso:
 2 - Códigos de Status: Armazenam códigos de status HTTP ou outros códigos de resposta.
 3 - Categorias ou Tipos de Dados: Definem categorias fixas para dados, como níveis de acesso ou tipos de produto.
 
-- Módulos: 
+- Módulos: São similares a classes em relação ao fato de que também armazenam uma coleção de métodos, constantes, outras definições de módulos e classes. Diferentemente das classes, você não pode criar objetos baseados em módulos nem pode criar módulos que herdam desse módulo.
 
