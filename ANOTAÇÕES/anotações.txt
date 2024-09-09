@@ -1010,5 +1010,12 @@ Diferentemente das classes, você não pode criar objetos baseados em módulos n
 Módulos são um bom lugar para armazenar constantes em um local centralizado.
 
 - Objetivos: Agem como namespaces, permitindo que você defina métodos cujos nomes não irão colidir com aqueles definidos em outras partes de um programa. Permitem também que você compartilhe funcionalidades entre classes.
+____________________________________________________________________________________________
+-MIXINS:(Mistura de classes e módulos) Permite que façamos uma pseudo herança múltipla. 
+
+São uma forma poderosa e flexível de adicionar funcionalidades a classes sem a necessidade de usar herança. Mixins são usados para compartilhar comportamentos entre classes através da inclusão de módulos. Isso permite que você compartilhe código entre várias classes sem criar uma hierarquia complexa de herança.
+
+Conceito de Mixins
+Um mixin é basicamente um módulo que contém métodos e, opcionalmente, constantes. Esses módulos podem ser incluídos em classes para adicionar seus métodos e comportamentos a essas classes.
 
 
