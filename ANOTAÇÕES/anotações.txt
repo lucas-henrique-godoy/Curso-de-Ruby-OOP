@@ -1009,4 +1009,6 @@ Exemplos de uso:
 Diferentemente das classes, você não pode criar objetos baseados em módulos nem pode criar módulos que herdam desse módulo, ou seja não é possivel criar um módulo e instanciar esse módulo para criar um objeto.
 Módulos são um bom lugar para armazenar constantes em um local centralizado.
 
+- Objetivos: Agem como namespaces, permitindo que você defina métodos cujos nomes não irão colidir com aqueles definidos em outras partes de um programa. Permitem também que você compartilhe funcionalidades entre classes.
+
 
