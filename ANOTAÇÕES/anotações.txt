@@ -1005,4 +1005,5 @@ Exemplos de uso:
 2 - Códigos de Status: Armazenam códigos de status HTTP ou outros códigos de resposta.
 3 - Categorias ou Tipos de Dados: Definem categorias fixas para dados, como níveis de acesso ou tipos de produto.
 
+- Módulos: 
 
