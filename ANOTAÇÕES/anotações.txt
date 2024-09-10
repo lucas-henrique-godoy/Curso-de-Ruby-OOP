@@ -1093,6 +1093,9 @@ POLIMORFISMO: É a capacidade de referenciar um objeto de várias formas diferen
 - Overriding
 - Duck typing
 
+- REABRINDO CLASSES:
+
+
 
 
 
