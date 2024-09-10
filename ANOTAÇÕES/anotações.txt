@@ -1071,6 +1071,28 @@ Métodos com a mesma assinatura: A "assinatura" de um método refere-se ao seu n
 
 Resumindo:
 Quando usamos duck typing, estamos aproveitando o fato de que, desde que um objeto implemente os métodos esperados (ou seja, tenha a mesma assinatura), podemos tratá-lo de maneira semelhante a outros objetos que implementam esses métodos, mesmo que eles não sejam da mesma classe ou não tenham uma relação de herança direta. Assim, o polimorfismo é alcançado através da implementação de métodos com a mesma assinatura, independentemente da hierarquia de classes.
+_____________________________________________________________________________________________
+
+-RESUMO DOS PILARES DA PROGRAMAÇÃO ORIENTADA A OBJETOS:
+
+ABSTRAÇÃO: Imaginar o objeto
+- Identidade única
+- Atributos
+- Métodos.
+
+ENCAPSULAMENTO: Esconder as propriedadesdos objetos para obter mais segurança.
+- attr_accessor
+- attr_reader
+- attr_writer
+
+HERANÇA: A partir de uma classe pai ter uma classe filho herdando os atributos e métodos gerndo asim objetos permitindo reúso de código.
+classe filha < classe pai
+
+
+POLIMORFISMO: É a capacidade de referenciar um objeto de várias formas diferentes.
+- Overriding
+- Duck typing
+
 
 
 
