@@ -25,7 +25,7 @@ puts pessoa.apertar_o_pato(pato1)
 puts pessoa.apertar_o_pato(pato2)
 
 
-# Não utiliza herança e trata de formas diferentes o mesmo método; isso caracteriza o duck typing.
+# Não utiliza herança e trata de formas diferentes o mesmo método; isso caracteriza o duck typing que é uma forma de polimorfismo.
 
 # EXPLICAÇÃO DO CÓDIGO:
 
