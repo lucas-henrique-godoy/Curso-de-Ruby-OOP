@@ -1028,8 +1028,6 @@ Em Ruby, o conceito de duck typing é bastante utilizado e é uma parte fundamen
 
 Aqui está um exemplo simplificado para ilustrar como o duck typing funciona em Ruby:
 
-ruby
-Copiar código
 class Pato
   def quack
     puts "Quack!"
@@ -1058,5 +1056,24 @@ faz_voar(aviao)  # Saída: "Estou voando!"
 No exemplo acima, a função faz_voar espera um objeto que tenha o método voar. Não importa se o objeto é um Pato, um Aviao, ou qualquer outra coisa que implemente o método voar. O importante é que o objeto responda à mensagem voar.
 
 Essa flexibilidade é o que caracteriza o duck typing: você foca no que o objeto pode fazer, em vez de em que tipo de objeto ele é.
+____________________________________________________________________________________________
+
+- OUTRA EXPLICAÇÃO: Vamos esclarecer a frase:
+
+"Ao usarmos duck typing, fazemos polimorfismo através de métodos com a mesma assinatura."
+
+Explicação:
+Duck Typing: Duck typing é um conceito em linguagens de programação dinâmica que diz que o tipo ou a classe de um objeto não é tão importante quanto o comportamento que ele demonstra. A ideia é baseada na expressão "se parece um pato, nada como um pato e grasna como um pato, então deve ser um pato". Em termos de programação, isso significa que um objeto é tratado como um determinado tipo se ele implementar os métodos e comportamentos esperados, independentemente da sua classe real ou da herança.
+
+Polimorfismo: Polimorfismo é uma característica da programação orientada a objetos que permite que métodos com o mesmo nome se comportem de maneira diferente, dependendo do tipo do objeto que os chama. Isso permite que você use a mesma interface (ou assinatura de método) para diferentes tipos de dados.
+
+Métodos com a mesma assinatura: A "assinatura" de um método refere-se ao seu nome e aos tipos e número de seus parâmetros. No contexto do duck typing, dois métodos com a mesma assinatura são aqueles que têm o mesmo nome e parâmetros, mesmo que possam estar em classes diferentes ou não compartilhem uma herança comum.
+
+Resumindo:
+Quando usamos duck typing, estamos aproveitando o fato de que, desde que um objeto implemente os métodos esperados (ou seja, tenha a mesma assinatura), podemos tratá-lo de maneira semelhante a outros objetos que implementam esses métodos, mesmo que eles não sejam da mesma classe ou não tenham uma relação de herança direta. Assim, o polimorfismo é alcançado através da implementação de métodos com a mesma assinatura, independentemente da hierarquia de classes.
+
+
+
+
 
 
