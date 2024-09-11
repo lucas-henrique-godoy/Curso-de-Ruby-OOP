@@ -1093,7 +1093,7 @@ POLIMORFISMO: É a capacidade de referenciar um objeto de várias formas diferen
 - Overriding
 - Duck typing
 
-- REABRINDO CLASSES: Em Ruby, você pode reabrir classes existentes e adicionar novos métodos sempre que precisar. Isso é uma das características dinâmicas da linguagem e pode ser muito útil para estender a funcionalidade de classes sem modificar o código original. Aqui está um guia básico para você entender como fazer isso:
+- REABRINDO CLASSES (Monkey Patch): Em Ruby, você pode reabrir classes existentes e adicionar novos métodos sempre que precisar. Isso é uma das características dinâmicas da linguagem e pode ser muito útil para estender a funcionalidade de classes sem modificar o código original. Aqui está um guia básico para você entender como fazer isso:
 
 1. Reabrir uma Classe
 Para reabrir uma classe e adicionar novos métodos, você simplesmente declara a classe novamente com a mesma nomeação. Isso é conhecido como "abertura de classe" (class reopening). Aqui está um exemplo simples:
