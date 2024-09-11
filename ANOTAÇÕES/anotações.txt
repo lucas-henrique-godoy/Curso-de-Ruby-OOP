@@ -1093,7 +1093,162 @@ POLIMORFISMO: É a capacidade de referenciar um objeto de várias formas diferen
 - Overriding
 - Duck typing
 
-- REABRINDO CLASSES:
+- REABRINDO CLASSES: Em Ruby, você pode reabrir classes existentes e adicionar novos métodos sempre que precisar. Isso é uma das características dinâmicas da linguagem e pode ser muito útil para estender a funcionalidade de classes sem modificar o código original. Aqui está um guia básico para você entender como fazer isso:
+
+1. Reabrir uma Classe
+Para reabrir uma classe e adicionar novos métodos, você simplesmente declara a classe novamente com a mesma nomeação. Isso é conhecido como "abertura de classe" (class reopening). Aqui está um exemplo simples:
+
+class Pessoa
+  def initialize(nome)
+    @nome = nome
+  end
+
+  def saudacao
+    "Olá, meu nome é #{@nome}"
+  end
+end
+
+# Reabrindo a classe Pessoa
+class Pessoa
+  def idade(idade)
+    @idade = idade
+  end
+
+  def mostrar_idade
+    "Eu tenho #{@idade} anos"
+  end
+end
+
+# Criando uma nova instância e usando os novos métodos
+pessoa = Pessoa.new("João")
+puts pessoa.saudacao           # Saída: Olá, meu nome é João
+pessoa.idade(30)
+puts pessoa.mostrar_idade      # Saída: Eu tenho 30 anos
+2. Adicionar Novos Métodos
+Você pode adicionar métodos em qualquer momento durante a execução do programa, após a classe ter sido definida originalmente. Isso pode ser feito dentro da reabertura da classe, como mostrado acima.
+
+3. Alterar Métodos Existentes
+Se você reabrir uma classe e definir um método com o mesmo nome de um método existente, o novo método substituirá o método antigo. Aqui está um exemplo:
+
+ruby
+Copiar código
+class Pessoa
+  def saudacao
+    "Oi!"
+  end
+end
+
+# Reabrindo a classe e alterando o método saudacao
+class Pessoa
+  def saudacao
+    "Olá, eu sou uma pessoa!"
+  end
+end
+
+# Criando uma nova instância e usando o método alterado
+pessoa = Pessoa.new("Maria")
+puts pessoa.saudacao  # Saída: Olá, eu sou uma pessoa!
+4. Usar Módulos para Extensão
+Além de reabrir classes, você pode usar módulos para adicionar funcionalidades de forma mais modular e organizável. Aqui está um exemplo:
+
+module Adicional
+  def habilidades
+    "Tenho habilidades adicionais!"
+  end
+end
+
+class Pessoa
+  include Adicional
+end
+
+pessoa = Pessoa.new("Ana")
+puts pessoa.habilidades  # Saída: Tenho habilidades adicionais!
+5. Considerações
+Cuidado com sobrecarga: Reabrir classes e alterar métodos existentes pode levar a problemas de manutenção, especialmente em projetos grandes. É uma prática que deve ser usada com cuidado e consciência das implicações.
+Testes: Sempre teste as alterações para garantir que a nova funcionalidade não afete negativamente o comportamento existente.
+
+_____________________________________________________________________________________________
+
+- REABRINDO CLASSES NO IRB:O IRB (Interactive Ruby) é uma ferramenta muito útil para experimentar e aprender Ruby interativamente. Vou mostrar como você pode usar o IRB para reabrir classes e adicionar métodos, de maneira semelhante ao que fizemos anteriormente, mas de forma interativa.
+
+1. Iniciar o IRB
+Primeiro, abra seu terminal e inicie o IRB digitando:
+
+irb
+2. Definir uma Classe e Adicionar Métodos
+Vamos definir uma classe Pessoa e adicionar alguns métodos a ela. No IRB, você pode digitar o seguinte:
+
+irb(main):001:0> class Pessoa
+irb(main):002:1>   def initialize(nome)
+irb(main):003:2>     @nome = nome
+irb(main):004:2>   end
+irb(main):005:1> 
+irb(main):006:1*   def saudacao
+irb(main):007:2>     "Olá, meu nome é #{@nome}"
+irb(main):008:1>   end
+irb(main):009:1> end
+=> nil
+Aqui, você criou uma classe Pessoa com um método saudacao.
+
+3. Reabrir a Classe e Adicionar Métodos
+Agora, reabra a classe Pessoa para adicionar mais métodos:
+
+irb(main):010:0> class Pessoa
+irb(main):011:1>   def idade(idade)
+irb(main):012:2>     @idade = idade
+irb(main):013:1>   end
+irb(main):014:1> 
+irb(main):015:1*   def mostrar_idade
+irb(main):016:2>     "Eu tenho #{@idade} anos"
+irb(main):017:1>   end
+irb(main):018:1> end
+=> nil
+Aqui, você adicionou os métodos idade e mostrar_idade.
+
+4. Usar a Nova Funcionalidade
+Crie uma instância da classe Pessoa e use os novos métodos:
+
+irb(main):019:0> pessoa = Pessoa.new("João")
+=> #<Pessoa:0x00007f9d81043800 @nome="João">
+irb(main):020:0> pessoa.saudacao
+=> "Olá, meu nome é João"
+irb(main):021:0> pessoa.idade(30)
+=> 30
+irb(main):022:0> pessoa.mostrar_idade
+=> "Eu tenho 30 anos"
+5. Alterar Métodos Existentes
+Se você quiser alterar um método existente, reabra a classe e redefine o método:
+
+irb(main):023:0> class Pessoa
+irb(main):024:1>   def saudacao
+irb(main):025:2>     "Oi, eu sou uma pessoa!"
+irb(main):026:1>   end
+irb(main):027:1> end
+=> nil
+Agora, se você chamar o método saudacao, verá a nova definição:
+
+irb(main):028:0> pessoa.saudacao
+=> "Oi, eu sou uma pessoa!"
+6. Usar Módulos para Adicionar Funcionalidade
+Você também pode usar módulos para adicionar métodos a uma classe. Vamos adicionar um módulo Adicional e incluir esse módulo na classe Pessoa:
+
+ruby
+Copiar código
+irb(main):029:0> module Adicional
+irb(main):030:1>   def habilidades
+irb(main):031:2>     "Tenho habilidades adicionais!"
+irb(main):032:1>   end
+irb(main):033:1> end
+=> nil
+irb(main):034:0> class Pessoa
+irb(main):035:1>   include Adicional
+irb(main):036:1> end
+=> nil
+irb(main):037:0> pessoa.habilidades
+=> "Tenho habilidades adicionais!"
+No IRB, você pode experimentar e ver os efeitos das mudanças em tempo real, o que é ótimo para entender como a reabertura de classes e a inclusão de módulos funcionam na prática. Se tiver mais dúvidas ou precisar de mais exemplos, é só dizer!
+
+
 
 
 
