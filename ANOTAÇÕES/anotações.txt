@@ -1246,7 +1246,9 @@ irb(main):036:1> end
 => nil
 irb(main):037:0> pessoa.habilidades
 => "Tenho habilidades adicionais!"
-No IRB, você pode experimentar e ver os efeitos das mudanças em tempo real, o que é ótimo para entender como a reabertura de classes e a inclusão de módulos funcionam na prática. Se tiver mais dúvidas ou precisar de mais exemplos, é só dizer!
+No IRB, você pode experimentar e ver os efeitos das mudanças em tempo real, o que é ótimo para entender como a reabertura de classes e a inclusão de módulos funcionam na prática.
+
+
 
 
 
