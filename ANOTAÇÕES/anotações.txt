@@ -1313,7 +1313,8 @@ irb(main):008> "fulano/de/tal/ok".split("")
 irb(main):009> "fulano/de/tal/ok".split("/")
 => ["fulano", "de", "tal", "ok"]
 
-- GEMS: No Ruby, gems são pacotes de código reutilizável que você pode adicionar ao seu projeto para estender suas funcionalidades. Gems são uma parte fundamental do ecossistema Ruby e facilitam a inclusão de bibliotecas e ferramentas desenvolvidas por outros.
+____________________________________________________________________________________________
+- GEMS(gerenciador de pacotes do ruby): No Ruby, gems são pacotes de código reutilizável que você pode adicionar ao seu projeto para estender suas funcionalidades. Gems são uma parte fundamental do ecossistema Ruby e facilitam a inclusão de bibliotecas e ferramentas desenvolvidas por outros.
 
 O que é uma Gem?
 Uma gem é um arquivo compactado que contém um conjunto de arquivos Ruby, metadados (como nome, versão e descrição) e um arquivo de configuração chamado gemspec. As gems podem incluir bibliotecas, frameworks, ferramentas e até mesmo scripts de execução.
