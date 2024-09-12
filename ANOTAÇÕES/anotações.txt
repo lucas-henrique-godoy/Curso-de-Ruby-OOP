@@ -1249,7 +1249,9 @@ irb(main):037:0> pessoa.habilidades
 No IRB, você pode experimentar e ver os efeitos das mudanças em tempo real, o que é ótimo para entender como a reabertura de classes e a inclusão de módulos funcionam na prática.
 
 -OBS: Devemos tomar cuidado ao modificar um método padrão do ruby, pois interferir de forma errada no meu sistema.
+_____________________________________________________________________________________________
 
+-SPLIT: 
 
 
 
