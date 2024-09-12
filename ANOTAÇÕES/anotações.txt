@@ -1302,7 +1302,7 @@ irb(main):004> "lucas".split
 => ["lucas"]
 
 - SEPARANDO LETRA POR LETRA. EXEMPLO NO IRB:
-irb(main):006> "lucas".split("")
+irb(main):006> "lucas".split("") - as aspas indicam que não tem nada(nenhum delimitador).
 => ["l", "u", "c", "a", "s"]
 
 
