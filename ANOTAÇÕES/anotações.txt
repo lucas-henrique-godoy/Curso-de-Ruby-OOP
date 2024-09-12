@@ -1362,6 +1362,22 @@ bundle update
 Conclusão
 Gems são uma maneira poderosa e eficiente de adicionar funcionalidades e ferramentas ao seu projeto Ruby. Elas permitem que você aproveite o trabalho da comunidade Ruby e foque mais no desenvolvimento do seu próprio código.
 
+OBS: PARA UTILIZAR UMA GEM É NECESSÁRIO INSTALAR: GEM INSTALL NOME DA GEM.
+CARREGAR A GEM: REQUIRE "NOME DA GEM". EXEMPLO COM O  TERMINAL E IRB:
+PS C:\Users\lucasgodoy\Desktop\Curso-de-Ruby-OOP> gem install lerolero_generator
+Fetching lerolero_generator-1.0.1.gem
+Using rubygems directory: C:/Users/lucasgodoy/.local/share/gem/ruby/3.3.0
+Successfully installed lerolero_generator-1.0.1
+Parsing documentation for lerolero_generator-1.0.1
+Installing ri documentation for lerolero_generator-1.0.1
+Done installing documentation for lerolero_generator after 0 seconds
+1 gem installed
+PS C:\Users\lucasgodoy\Desktop\Curso-de-Ruby-OOP> irb
+irb(main):001> require "lerolero_generator"
+=> true
+irb(main):002> LeroleroGenerator.sentence
+=> "Por outro lado, a execução deste projeto facilita a definição dos conceitos de participação geral."
+irb(main):003>
 
 
 
