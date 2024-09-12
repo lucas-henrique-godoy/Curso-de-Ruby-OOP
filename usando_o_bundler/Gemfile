@@ -1,0 +1,24 @@
+# Define a fonte de onde as gems serão baixadas. 
+# 'https://rubygems.org/' é o repositório padrão para gems Ruby.
+source 'https://rubygems.org/'
+
+# Adiciona a gem 'lerolero_generator' ao projeto.
+# Esta gem é usada para gerar textos aleatórios e fictícios. 
+# Pode ser útil para preencher dados de teste ou criar conteúdo fictício.
+gem 'lerolero_generator'
+
+# Adiciona a gem 'cpf_utils' ao projeto.
+# Esta gem fornece utilitários para manipulação de CPF (Cadastro de Pessoas Físicas), 
+# que é um número de identificação fiscal no Brasil. 
+# Pode ser usada para validação, geração e formatação de CPFs.
+gem 'cpf_utils'
+
+# Adiciona a gem 'nokogiri' ao projeto.
+# Nokogiri é uma biblioteca popular para processamento e análise de HTML e XML.
+# É amplamente utilizada para parsing de dados da web e manipulação de documentos XML.
+gem 'nokogiri'
+
+
+
+
+
