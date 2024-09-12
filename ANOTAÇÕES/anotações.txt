@@ -1254,12 +1254,7 @@ ________________________________________________________________________________
 -.SPLIT: Em Ruby, o método split é utilizado para dividir uma string em um array de substrings, com base em um delimitador especificado.
 Aqui está uma visão geral de como funciona:
 
-Sintaxe Básica
 
-string.split(delimitador, limite)
-
-delimitador: É o padrão que você usa para separar a string. Pode ser uma string, um caractere ou uma expressão regular. Se você não fornecer um delimitador, o método usará espaços em branco por padrão.
-limite (opcional): Define o número máximo de substrings a serem retornadas. Se você especificar um limite, a última substring conterá o restante da string original, mesmo que ela contenha o delimitador.
 
 
 
