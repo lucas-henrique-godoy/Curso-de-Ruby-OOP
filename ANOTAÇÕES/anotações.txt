@@ -1357,6 +1357,7 @@ gem update nome_da_gem
 
 Ou, para atualizar todas as gems no seu projeto:
 bundle update
+
 Conclusão
 Gems são uma maneira poderosa e eficiente de adicionar funcionalidades e ferramentas ao seu projeto Ruby. Elas permitem que você aproveite o trabalho da comunidade Ruby e foque mais no desenvolvimento do seu próprio código.
 
