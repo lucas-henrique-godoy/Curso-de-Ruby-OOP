@@ -1379,6 +1379,8 @@ irb(main):002> LeroleroGenerator.sentence
 => "Por outro lado, a execução deste projeto facilita a definição dos conceitos de participação geral."
 irb(main):003>
 
+-OBS: PARA INSTALAR UMA GEM: gem install <gem>
+PARA DESINSTALAR UMA GEM: gem uninstall <gem>
 
 
 
