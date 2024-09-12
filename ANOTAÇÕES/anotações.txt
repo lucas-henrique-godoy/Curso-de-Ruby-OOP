@@ -1382,6 +1382,11 @@ irb(main):003>
 -OBS: PARA INSTALAR UMA GEM: gem install <gem>
 PARA DESINSTALAR UMA GEM: gem uninstall <gem>
 
+____________________________________________________________________________________________
+
+- BUNDLE(é também ua gem): Ele é usado para gerenciar quais as gems necessárias nos projetos.
+
+
 
 
 
