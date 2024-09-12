@@ -1305,6 +1305,14 @@ irb(main):004> "lucas".split
 irb(main):006> "lucas".split("") - as aspas indicam que não tem nada(nenhum delimitador).
 => ["l", "u", "c", "a", "s"]
 
+ - OUTRO EXEMPO:
+irb(main):008> "fulano/de/tal/ok".split("")
+=> ["f", "u", "l", "a", "n", "o", "/", "d", "e", "/", "t", "a", "l", "/", "o", "k"]
+
+- OUTRO EXEMPLO AGORA USANDO A / COMO DELIMITADOR:
+irb(main):009> "fulano/de/tal/ok".split("/")
+=> ["fulano", "de", "tal", "ok"]
+
 
 
 
