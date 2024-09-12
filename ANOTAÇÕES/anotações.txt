@@ -1251,30 +1251,47 @@ No IRB, você pode experimentar e ver os efeitos das mudanças em tempo real, o 
 -OBS: Devemos tomar cuidado ao modificar um método padrão do ruby, pois interferir de forma errada no meu sistema.
 _____________________________________________________________________________________________
 
--SPLIT: O método .split em Ruby é usado para dividir uma string em um array de substrings com base em um delimitador especificado.
+-SPLIT: Em Ruby, o método split é utilizado para dividir uma string em um array de substrings, com base em um delimitador especificado.
 
-Sintaxe:
-string.split(delimitador, limite)
+Aqui está uma visão geral de como funciona:
 
-delimitador: O padrão usado para dividir a string. Pode ser uma string, caractere ou expressão regular. Se não for especificado, usa espaços em branco como padrão.
-limite (opcional): Número máximo de substrings a serem retornadas. Se especificado, a última substring conterá o restante da string original.
+Sintaxe Básica: string.split(delimitador, limite)
+
+delimitador: É o padrão que você usa para separar a string. Pode ser uma string, um caractere ou uma expressão regular. Se você não fornecer um delimitador, o método usará espaços em branco por padrão.
+limite (opcional): Define o número máximo de substrings a serem retornadas. Se você especificar um limite, a última substring conterá o restante da string original, mesmo que ela contenha o delimitador.
 Exemplos
-Dividindo por espaço (padrão)
 
-"a b c".split
-# => ["a", "b", "c"]
+Dividindo uma string com base em um espaço:
+string = "ola mundo ruby"
+resultado = string.split
+# resultado: ["ola", "mundo", "ruby"]
 
-Dividindo por um caractere específico:
+Dividindo uma string com base em um caractere específico:
+string = "maçã,banana,laranja"
+resultado = string.split(',')
+# resultado: ["maçã", "banana", "laranja"]
 
-"a,b,c".split(',')
-# => ["a", "b", "c"]
+Dividindo uma string com base em uma expressão regular:
+string = "maçã;banana,laranja"
+resultado = string.split(/[,;]/)
+# resultado: ["maçã", "banana", "laranja"]
 
-Usando limite:
+Usando o parâmetro limite:
+string = "a-b-c-d"
+resultado = string.split('-', 3)
+# resultado: ["a", "b", "c-d"]
 
-"a-b-c".split('-', 2)
-# => ["a", "b-c"]
-O método .split é útil para separar e manipular strings com base em delimitadores específicos.
+Neste último exemplo, o limite é 3, então a string é dividida em três partes, com a última parte contendo o restante da string.
 
+Notas Adicionais
+Se o delimitador não for encontrado na string, o método split retornará um array com a string original como seu único elemento.
+Se o delimitador for uma expressão regular que pode coincidir com várias ocorrências consecutivas, o método split pode resultar em elementos vazios no array.
+Por exemplo:
+
+string = "a--b---c"
+resultado = string.split('-')
+# resultado: ["a", "", "b", "", "", "c"]
+Neste exemplo, há elementos vazios no resultado porque o delimitador "-" aparece várias vezes consecutivamente.
 
 
 
