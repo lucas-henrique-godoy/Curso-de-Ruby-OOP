@@ -1251,7 +1251,8 @@ No IRB, você pode experimentar e ver os efeitos das mudanças em tempo real, o 
 -OBS: Devemos tomar cuidado ao modificar um método padrão do ruby, pois interferir de forma errada no meu sistema.
 _____________________________________________________________________________________________
 
--SPLIT: 
+-.SPLIT: Em Ruby, o método split é utilizado para dividir uma string em um array de substrings, com base em um delimitador especificado.
+
 
 
 
