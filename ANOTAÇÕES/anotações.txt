@@ -1293,13 +1293,17 @@ resultado = string.split('-')
 Neste exemplo, há elementos vazios no resultado porque o delimitador "-" aparece várias vezes consecutivamente.
 
 
-POR PADRÃO ELE SÓ SEPARA AS PALAVRAS QUANDO TEM ESPÇO ENTRE ELAS. EXEMPLO NO IRB:
+POR PADRÃO ELE SÓ SEPARA AS PALAVRAS QUANDO TEM ESPAÇO ENTRE ELAS POIS O ESPAÇO É O DELIMITADOR. EXEMPLO NO IRB:
 irb(main):001> "lucas godoy".split
 => ["lucas", "godoy"]
 
-SE HÁ APENAS UMA PALAVRA ELE SIMPLESMENTE A CLOCA NUM ARRAY. EXEMPLO NO IRB:
+SE HÁ APENAS UMA PALAVRA ELE SIMPLESMENTE A COLOCA NUM ARRAY. EXEMPLO NO IRB:
 irb(main):004> "lucas".split
 => ["lucas"]
+
+- SEPARANDO LETRA POR LETRA. EXEMPLO NO IRB:
+irb(main):006> "lucas".split("")
+=> ["l", "u", "c", "a", "s"]
 
 
 
