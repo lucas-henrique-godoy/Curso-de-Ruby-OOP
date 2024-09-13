@@ -1476,7 +1476,7 @@ bundle exec ruby app.rb
 Conclusão
 O Bundler é uma ferramenta poderosa para gerenciar dependências em projetos Ruby. Ele ajuda a garantir que todos os desenvolvedores e ambientes de produção estejam usando as mesmas versões das gems, o que reduz problemas de compatibilidade e facilita a manutenção do projeto. Ao seguir as etapas para criar um Gemfile, instalar e atualizar gems, e usar bundle exec para executar comandos, você pode gerenciar dependências de forma eficaz e manter seu projeto Ruby organizado e confiável.
 
-
+- TRABALHANDO COM ARQUIVOS: 
 
 
 
