@@ -1594,7 +1594,7 @@ Conclusão
 Ruby oferece uma maneira bastante intuitiva para trabalhar com arquivos e diretórios. A chave é entender os modos de abertura de arquivos e como usar blocos para garantir que os arquivos sejam fechados corretamente após a operação. Utilize os métodos fornecidos para ler, escrever, manipular e gerenciar arquivos de forma eficaz.
 ____________________________________________________________________________________________________________________
 
-- ARGV - ARGUMENT VECTOR: Em Ruby, ARGV é uma constante que representa um array contendo os argumentos de linha de comando passados para o script Ruby. Quando você executa um script Ruby a partir da linha de comando e fornece argumentos, esses argumentos são armazenados na constante ARGV.
+- ARGV(é o que vem de fora da sua aplicação) - ARGUMENT VECTOR: Em Ruby, ARGV é uma constante que representa um array contendo os argumentos de linha de comando passados para o script Ruby. Quando você executa um script Ruby a partir da linha de comando e fornece argumentos, esses argumentos são armazenados na constante ARGV.
 
 Como Funciona o ARGV
 Quando você executa um script Ruby, qualquer argumento que você forneça depois do nome do script é capturado por ARGV. Os argumentos são armazenados em uma lista, onde cada elemento da lista é uma string representando um dos argumentos.
