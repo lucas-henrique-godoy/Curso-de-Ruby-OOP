@@ -1675,6 +1675,47 @@ ARGV é um array de strings que contém os argumentos de linha de comando passad
 É útil para permitir que scripts Ruby recebam entrada de parâmetros na linha de comando.
 Cada argumento é acessado como uma string e você pode iterar sobre eles, verificar seu número, e manipulá-los conforme necessário.
 
+-REQUIRE: No Ruby, o require é um método utilizado para carregar bibliotecas e arquivos externos no seu programa. Quando você usa require, você está basicamente dizendo ao Ruby para incluir o código de um arquivo ou de uma biblioteca no seu programa, o que permite que você use as funcionalidades definidas nesses arquivos ou bibliotecas.
+
+Aqui estão alguns pontos importantes sobre o require:
+
+Carregamento de Bibliotecas e Arquivos:
+
+O require é usado para carregar bibliotecas padrão do Ruby, bem como gemas e arquivos Ruby personalizados.
+Por exemplo, para carregar a biblioteca padrão de matemática, você usaria require 'mathn'.
+Uso com Gems:
+
+Quando você instala uma gema (uma biblioteca externa), você pode usar require para incluir essa gema no seu código. Por exemplo, se você instalou a gema nokogiri, você a incluiria no seu código com require 'nokogiri'.
+Localização dos Arquivos:
+
+O Ruby procura o arquivo que você está tentando carregar em uma série de diretórios. Normalmente, ele verifica os diretórios listados na variável global $LOAD_PATH (ou $:).
+Extensões:
+
+Se o arquivo que você está tentando carregar não tem uma extensão explícita, o Ruby tentará adicionar .rb automaticamente. Por exemplo, require 'my_library' tentará carregar o arquivo my_library.rb.
+Evita Recarregamentos:
+
+O require carrega o arquivo apenas uma vez. Se você tentar require o mesmo arquivo novamente, o Ruby ignorará a tentativa de carregamento adicional. Isso é feito para evitar problemas de redefinição e sobrecarga de desempenho.
+require_relative:
+
+Existe também o método require_relative, que é usado para carregar arquivos que estão no mesmo diretório ou em um subdiretório do arquivo atual. Por exemplo, se você tem um arquivo lib/utils.rb e quer carregá-lo a partir de um arquivo localizado em lib/main.rb, você pode usar require_relative 'utils'.
+Aqui está um exemplo básico de uso de require:
+
+ruby
+Copiar código
+# Suponha que você tenha um arquivo chamado 'math_helper.rb'
+# com o seguinte conteúdo:
+# module MathHelper
+#   def self.add(a, b)
+#     a + b
+#   end
+# end
+
+# Em seu arquivo principal, você pode carregar esse módulo assim:
+require_relative 'math_helper'
+
+puts MathHelper.add(5, 3)  # Isso imprimirá 8
+Neste exemplo, require_relative 'math_helper' carrega o módulo definido no arquivo math_helper.rb, permitindo que você use o método add do módulo MathHelper.
+
 
 
 

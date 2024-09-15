@@ -1,4 +1,4 @@
-require_relative 'C:\Users\lucas\OneDrive\Área de Trabalho\Curso-de-Ruby-OOP\jogos\adivinhar_numero\lib\adivinhar_numero.rb'
+require_relative 'lib\adivinhar_numero'
 
 jogo = AdivinharNumero.new
 
