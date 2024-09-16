@@ -1800,7 +1800,71 @@ SINTAXE: system('<comand>', '<comand>')
 
 _____________________________________________________________________________________________
 
-- ASCII Art: 
+- ASCII Art: ASCII Art é uma forma de arte digital que usa caracteres do conjunto de caracteres ASCII (American Standard Code for Information Interchange) para criar imagens e representações gráficas. Em outras palavras, é uma arte que utiliza apenas caracteres de texto para criar imagens visuais.
+
+Conceitos Básicos
+Conjunto de Caracteres ASCII:
+
+O ASCII é um padrão de codificação de caracteres que inclui letras, números e símbolos comuns. Por exemplo, A, 1, @, e # são caracteres ASCII.
+Estrutura da Arte:
+
+A arte ASCII é criada organizando esses caracteres em uma grade para formar uma imagem. A ideia é usar os diferentes caracteres para representar diferentes tons e texturas, criando a ilusão de uma imagem.
+Exemplos de ASCII Art
+Aqui estão alguns exemplos simples de ASCII Art:
+
+Exemplo 1: Carinha Feliz
+
+ruby
+Copiar código
+:-)
+Exemplo 2: Coração
+
+scss
+Copiar código
+  /\_/\  
+ ( o.o ) 
+  > ^ <
+Exemplo 3: Um Peixe
+
+shell
+Copiar código
+><(((('>
+Criando ASCII Art
+Para criar ASCII Art, siga estes passos básicos:
+
+Escolha o Design:
+
+Decida o que você deseja representar. Pode ser uma forma simples ou uma imagem complexa.
+Planeje o Layout:
+
+Pense em como usar os diferentes caracteres para criar a imagem. Caractere como #, *, @, e espaços são frequentemente usados para formar diferentes áreas da imagem.
+Use um Editor de Texto:
+
+Você pode criar ASCII Art em qualquer editor de texto, como o Notepad no Windows, TextEdit no macOS, ou editores de código como VSCode ou Sublime Text.
+Ajuste e Refine:
+
+Ajuste a arte para garantir que os caracteres estão bem alinhados e a imagem está clara.
+Ferramentas e Recursos
+Editores de Texto: Qualquer editor de texto pode ser usado, mas alguns editores oferecem suporte a fontes monoespaçadas (onde todos os caracteres têm a mesma largura), o que pode facilitar a criação de ASCII Art.
+
+Geradores de ASCII Art: Existem ferramentas online e programas que convertem imagens em ASCII Art. Essas ferramentas analisam a imagem e mapeiam os diferentes níveis de cinza para caracteres ASCII.
+
+Comunidades: Muitos sites e fóruns online possuem comunidades dedicadas a ASCII Art, onde você pode encontrar inspiração, compartilhar sua arte, e receber feedback.
+
+Dicas para Criar Boa ASCII Art
+Use Fontes Monoespaçadas:
+
+Para manter o alinhamento correto, use uma fonte monoespaçada (onde cada caractere ocupa a mesma largura) ao criar ou visualizar ASCII Art.
+Comece Simples:
+
+Comece com designs simples e depois passe para mais complexos à medida que ganha experiência.
+Experimente com Diferentes Caracteres:
+
+Use diferentes caracteres para criar diferentes texturas e profundidades na sua arte.
+Visualize em Diferentes Tamanhos:
+
+A aparência da ASCII Art pode mudar dependendo da largura do terminal ou editor onde é visualizada, então ajuste conforme necessário.
+ASCII Art é uma forma criativa e divertida de expressar visualmente usando apenas texto. Com um pouco de prática, você pode criar representações impressionantes e detalhadas usando apenas caracteres ASCII.
 
 
 
