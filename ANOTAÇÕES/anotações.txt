@@ -1700,8 +1700,7 @@ require_relative:
 Existe também o método require_relative, que é usado para carregar arquivos que estão no mesmo diretório ou em um subdiretório do arquivo atual. Por exemplo, se você tem um arquivo lib/utils.rb e quer carregá-lo a partir de um arquivo localizado em lib/main.rb, você pode usar require_relative 'utils'.
 Aqui está um exemplo básico de uso de require:
 
-ruby
-Copiar código
+
 # Suponha que você tenha um arquivo chamado 'math_helper.rb'
 # com o seguinte conteúdo:
 # module MathHelper
