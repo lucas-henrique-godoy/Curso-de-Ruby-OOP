@@ -1,4 +1,4 @@
-
+require_relative 'lib/adivinhar_numero'
 
 jogo = AdivinharNumero.new
 
