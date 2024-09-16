@@ -1675,6 +1675,8 @@ ARGV é um array de strings que contém os argumentos de linha de comando passad
 É útil para permitir que scripts Ruby recebam entrada de parâmetros na linha de comando.
 Cada argumento é acessado como uma string e você pode iterar sobre eles, verificar seu número, e manipulá-los conforme necessário.
 
+____________________________________________________________________________________________________________________
+
 -REQUIRE: No Ruby, o require é um método utilizado para carregar bibliotecas e arquivos externos no seu programa. Quando você usa require, você está basicamente dizendo ao Ruby para incluir o código de um arquivo ou de uma biblioteca no seu programa, o que permite que você use as funcionalidades definidas nesses arquivos ou bibliotecas.
 
 Aqui estão alguns pontos importantes sobre o require:
