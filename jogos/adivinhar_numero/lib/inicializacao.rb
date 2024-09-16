@@ -8,7 +8,7 @@ class Inicializacao
       print "."
     end
     puts "."
-    
+        
     system('cls')
   end
 end
