@@ -5,6 +5,9 @@ CURSO DE RUBY
 - COMENTARIO DE VARIAS LINHAS: =begin codigo =end
 - INTERPOLAÇÃO DE VARIÁVEIS: #{variavel}. Pra funcionar deve-se usar aspas duplas.
 
+- PRINT: IMPRIME E NÃO VAI PARA A LINHA DE BAIXO.
+- PUTS: IMPRIME E VAI PARA A LINHA DE BAIXO.
+
 - GETS
 O método gets é usado para ler uma linha de entrada do usuário. Quando você usa gets, o programa espera que o usuário digite algo e pressione Enter. O texto digitado pelo usuário é então retornado como uma string.
 
