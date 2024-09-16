@@ -1,11 +1,10 @@
 class Inicializacao
   def self.inicializando
     print "Inicializando."
-    sleep 1
-    print "."
-    sleep 1
-    print "."
-    sleep 1
-    puts "."
+    4.times do |i|
+      sleep 1
+      print "."
+    end
+    puts "."      
   end
 end
