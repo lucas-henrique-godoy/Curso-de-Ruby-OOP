@@ -3,16 +3,19 @@ class AdivinharNumero
   attr_reader :venceu
 
   def initialize
+    inicializando
+    @numero = Random.rand(1..10)
+    @venceu = false
+  end
+
+  def inicializando
     print "Iniciaizando."
     sleep 1
     print "."
     sleep 1
     print "."
     sleep 1
-    print "."
-
-    @numero = Random.rand(1..10)
-    @venceu = false
+    puts "."
   end
 
   def tentar_adivinhar(numero)
