@@ -1,22 +1,13 @@
+require_relative 'inicializacao'
 class AdivinharNumero
   attr_reader :numero
   attr_reader :venceu
 
   def initialize
-    inicializando
+    Inicializacao.inicializando
     @numero = Random.rand(1..10)
     @venceu = false
-  end
-
-  def inicializando
-    print "Iniciaizando."
-    sleep 1
-    print "."
-    sleep 1
-    print "."
-    sleep 1
-    puts "."
-  end
+  end  
 
   def tentar_adivinhar(numero)
     if numero == @numero
