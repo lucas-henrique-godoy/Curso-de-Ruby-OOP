@@ -1712,6 +1712,7 @@ Aqui está um exemplo básico de uso de require:
 # end
 
 # Em seu arquivo principal, você pode carregar esse módulo assim:
+
 require_relative 'math_helper'
 
 puts MathHelper.add(5, 3)  # Isso imprimirá 8
