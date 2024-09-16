@@ -1721,6 +1721,83 @@ require_relative 'math_helper'
 puts MathHelper.add(5, 3)  # Isso imprimirá 8
 Neste exemplo, require_relative 'math_helper' carrega o módulo definido no arquivo math_helper.rb, permitindo que você use o método add do módulo MathHelper.
 
+_____________________________________________________________________________________________
+- EXECUTANDO COMANDOS DO SO: Em Ruby, você pode executar comandos do sistema operacional usando alguns métodos integrados. Aqui estão as principais formas de executar comandos do sistema operacional e como usá-las:
+
+1. Usando o Método system
+O método system executa um comando no shell e retorna true se o comando for bem-sucedido, e false se falhar. É uma forma direta de executar comandos do sistema.
+
+ruby
+Copiar código
+# Executa o comando `ls` (listar arquivos e diretórios) e retorna true se o comando for bem-sucedido
+success = system('ls')
+
+# Verifica se o comando foi executado com sucesso
+puts "Comando executado com sucesso: #{success}"
+2. Usando o Método exec
+O método exec substitui o processo atual pelo comando especificado. Isso significa que, após a execução do comando, o script Ruby não continuará.
+
+ruby
+Copiar código
+# Executa o comando `ls` e substitui o processo Ruby pelo comando
+exec('ls')
+
+# Qualquer código após o exec não será executado
+puts "Este código não será executado se exec for usado."
+3. Usando o Método backticks (Crase)
+Os backticks (crases) permitem capturar a saída do comando e armazená-la em uma variável. É útil quando você precisa manipular a saída do comando em seu código Ruby.
+
+ruby
+Copiar código
+# Executa o comando `ls` e armazena a saída em uma variável
+output = `ls`
+
+# Imprime a saída do comando
+puts "Saída do comando `ls`:"
+puts output
+4. Usando o Método open3
+O módulo Open3 da biblioteca padrão oferece uma forma mais avançada e controlada de executar comandos, capturando a saída padrão, a saída de erro e o status de saída.
+
+ruby
+Copiar código
+require 'open3'
+
+# Executa o comando `ls` e captura a saída padrão, saída de erro e status de saída
+stdout, stderr, status = Open3.capture3('ls')
+
+# Imprime a saída padrão
+puts "Saída padrão:"
+puts stdout
+
+# Imprime a saída de erro
+puts "Saída de erro:"
+puts stderr
+
+# Verifica o status de saída
+puts "Status de saída: #{status.success? ? 'Sucesso' : 'Falha'}"
+5. Usando o Método spawn
+O método spawn cria um novo processo para executar o comando e retorna o ID do processo (PID). Isso permite que você execute o comando de forma assíncrona e continue com o script Ruby enquanto o comando é executado.
+
+ruby
+Copiar código
+# Executa o comando `ls` em um novo processo
+pid = spawn('ls')
+
+# Opcionalmente, aguarda a conclusão do comando
+Process.wait(pid)
+
+# Imprime o PID do processo
+puts "Comando `ls` executado com PID: #{pid}"
+Resumo
+system: Executa um comando e retorna um booleano indicando o sucesso.
+exec: Substitui o processo atual pelo comando.
+Backticks: Captura a saída do comando como uma string.
+Open3: Oferece controle avançado sobre a execução do comando e captura de saída.
+spawn: Executa um comando em um novo processo e permite execução assíncrona.
+Escolha o método que melhor se adapta às suas necessidades com base no controle e na forma como você precisa capturar ou manipular a saída do comando.
+
+SINTAXE: system('<comand>', '<comand>')
+
 
 
 
