@@ -1952,6 +1952,8 @@ Essas gems são projetadas para melhorar a experiência de criação de interfac
 
 -SITE PARA ENCONTRAR GEMS PARA TERMINAL: https://ttytoolkit.org/
 
+- FIM DO CURSO!
+
 
 
 
