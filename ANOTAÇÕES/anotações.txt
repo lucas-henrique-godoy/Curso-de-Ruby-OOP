@@ -1800,7 +1800,132 @@ SINTAXE: system('<comand>', '<comand>')
 
 _____________________________________________________________________________________________
 
+- ASCII ART: ASCII art é uma forma de arte criada usando caracteres ASCII para representar imagens ou textos de forma gráfica. Em Ruby, você pode criar e manipular ASCII art da mesma forma que você manipularia qualquer string. Aqui estão algumas maneiras de lidar com ASCII art em Ruby:
 
+1. Criando ASCII Art
+Você pode criar ASCII art simplesmente escrevendo strings com caracteres que formam uma imagem ou padrão. Por exemplo:
+
+ruby
+Copiar código
+cat_art = <<-ART
+ /\_/\  
+( o.o ) 
+ > ^ <
+ART
+
+puts cat_art
+2. Salvando ASCII Art em um Arquivo
+Se você quiser salvar sua arte ASCII em um arquivo de texto, você pode fazer isso facilmente com Ruby:
+
+ruby
+Copiar código
+cat_art = <<-ART
+ /\_/\  
+( o.o ) 
+ > ^ <
+ART
+
+File.open("cat_art.txt", "w") do |file|
+  file.write(cat_art)
+end
+3. Lendo ASCII Art de um Arquivo
+Para ler e exibir ASCII art a partir de um arquivo, você pode usar o seguinte código:
+
+ruby
+Copiar código
+cat_art = File.read("cat_art.txt")
+puts cat_art
+4. Gerando ASCII Art Automaticamente
+Se você quiser gerar ASCII art automaticamente a partir de texto, pode usar uma gem como artii, que pode transformar texto em arte ASCII:
+
+Instale a gem:
+
+bash
+Copiar código
+gem install artii
+Use a gem no seu código:
+
+ruby
+Copiar código
+require 'artii'
+
+a = Artii::Base.new
+puts a.asciify('Hello, world!')
+Isso gerará uma arte ASCII com o texto "Hello, world!".
+
+5. Manipulando ASCII Art
+Se você precisa manipular ou processar arte ASCII (por exemplo, ajustar o alinhamento ou tamanho), você pode usar métodos de string padrão de Ruby. Por exemplo, para centralizar uma arte ASCII:
+
+ruby
+Copiar código
+cat_art = <<-ART
+ /\_/\  
+( o.o ) 
+ > ^ <
+ART
+
+width = 20
+puts cat_art.each_line.map { |line| line.center(width) }.join
+6. Usando ASCII Art em Aplicações
+Você pode incorporar ASCII art em suas aplicações Ruby para fornecer mensagens visuais ou criar interfaces de linha de comando divertidas. Por exemplo:
+
+ruby
+Copiar código
+def print_welcome_message
+  welcome_art = <<-ART
+   __          __  _                            _ 
+   \\ \\        / / | |                           | |
+    \\ \\  /\\  / /__| |_ ___ _ __ ___  _ __   ___| |
+     \\ \\/  \\/ / _ \\ __/ _ \\ '__/ _ \\| '_ \\ / _ \\ |
+      \\  /\\  /  __/ || (_) | | | (_) | | | |  __/ |
+       \\/  \\/ \\___|\\__\\___/|_|\\___/|_| |_|\\___|_|
+  ART
+
+  puts welcome_art
+end
+
+print_welcome_message
+Esse código exibe uma mensagem de boas-vindas com arte ASCII na tela.
+
+Resumo
+Criar Arte: Use strings com caracteres ASCII.
+Salvar e Ler de Arquivos: Utilize File.open e File.read.
+Gerar Arte Automática: Use gems como artii.
+Manipulação de Strings: Ajuste alinhamento e formatação conforme necessário.
+Com Ruby, você tem várias ferramentas e métodos à sua disposição para trabalhar com ASCII art e tornar seu código mais visual e interessante.
+
+- SITES PARA CRIAR E ENCONTRAR ASCII ART:
+ASCII Art Archive
+
+Um dos maiores repositórios de ASCII art, categorizado em vários temas, como animais, jogos, e mais. Ideal para buscar e encontrar uma ampla gama de arte ASCII.
+Text-Image.com
+
+Ferramenta online que converte imagens em arte ASCII. Também oferece opções para criar arte em texto.
+Artii
+
+Ferramenta online que gera arte ASCII a partir de texto. Oferece uma série de fontes e estilos para escolher.
+Patorjk.com
+
+O "Text to ASCII Art Generator" permite gerar arte ASCII a partir de texto com várias fontes e estilos.
+ASCII Art Generator
+
+Um site com várias ferramentas para converter imagens e textos em arte ASCII. Também possui uma galeria de arte ASCII.
+ASCII Art Dictionary
+
+Um dicionário de arte ASCII com uma vasta coleção de exemplos e recursos.
+ASCII Art Generator by ASCII World
+
+Oferece uma ferramenta para converter imagens e textos em arte ASCII, além de uma galeria de arte criada por usuários.
+Make ASCII Art
+
+Ferramenta simples para criar arte ASCII a partir de texto com vários estilos e tamanhos.
+ASCII Art Studio
+
+Ferramenta para criar e editar arte ASCII. Disponível como software para download.
+ASCII Art Creation
+
+Plataforma para criar e compartilhar arte ASCII, com várias opções de personalização.
+Esses sites e ferramentas variam em funcionalidades, desde geração automática de arte a conversões de imagens em ASCII, permitindo uma ampla gama de criação e exploração de ASCII art.
 
 
 
