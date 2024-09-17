@@ -1927,6 +1927,31 @@ ASCII Art Creation
 Plataforma para criar e compartilhar arte ASCII, com várias opções de personalização.
 Esses sites e ferramentas variam em funcionalidades, desde geração automática de arte a conversões de imagens em ASCII, permitindo uma ampla gama de criação e exploração de ASCII art.
 
+_______________________________________________________________________________________________________________________
+
+-GEMS PARA TERMINAL: 
+O site ttytoolkit.org é um recurso que fornece uma série de ferramentas para trabalhar com a interface de linha de comando no contexto de Ruby. As "gems" que você encontra nesse site são bibliotecas Ruby que ajudam a criar e manipular interfaces de texto (TTY - Teletypewriter) no terminal.
+
+Aqui estão algumas das gems destacadas no site e suas principais funções:
+
+tty-prompt: Esta gem é utilizada para criar prompts interativos no terminal, facilitando a coleta de entradas do usuário. Ela suporta perguntas de múltipla escolha, confirmação, entrada de texto e muito mais.
+
+tty-table: Com essa gem, você pode criar tabelas formatadas no terminal, o que é útil para exibir dados tabulares de maneira legível e bem organizada.
+
+tty-screen: Fornece informações sobre o tamanho da tela do terminal e permite você detectar quando o terminal foi redimensionado.
+
+tty-spinner: Esta gem é usada para criar animações de carregamento ou spinners no terminal, ajudando a indicar que algum processo está em andamento.
+
+tty-color: Permite o uso de cores e estilos no texto exibido no terminal, facilitando a criação de interfaces de usuário mais atraentes e legíveis.
+
+tty-cursor: Oferece funcionalidades para manipular o cursor no terminal, como movê-lo para posições específicas, esconder ou mostrar o cursor, entre outras.
+
+tty-font: Permite gerar texto em diferentes fontes ASCII art para exibição em terminais, proporcionando uma maneira estilizada de exibir mensagens.
+
+Essas gems são projetadas para melhorar a experiência de criação de interfaces de linha de comando, proporcionando ferramentas para entrada e saída de dados, formatação e manipulação da interface de usuário em terminais. O ttytoolkit.org serve como um ponto central para explorar essas ferramentas e descobrir como usá-las em seus projetos Ruby.
+
+-SITE PARA ENCONTRAR GEMS PARA TERMINAL: https://ttytoolkit.org/
+
 
 
 
