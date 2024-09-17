@@ -9,11 +9,14 @@ class Inicializacao
     # end
     # puts "."
                          
-    puts " __                     " 
-    puts "|  |   _ _ ___ ___ ___  " 
-    puts "|  |__| | |  _| .'|_ -| " 
-    puts "|_____|___|___|__,|___| " 
+    File.open(File.expand_path('../../ascii/bat.txt', __FILE__), 'r') do |arq|
+      while line = arq.gets
+        puts line
+      end
+    end
+    
     sleep 3
+
     system('cls')
   end
 end
