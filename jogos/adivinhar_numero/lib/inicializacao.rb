@@ -8,7 +8,6 @@ class Inicializacao
     #   print "."
     # end
     # puts "."
-
                          
     puts " __                     " 
     puts "|  |   _ _ ___ ___ ___  " 
